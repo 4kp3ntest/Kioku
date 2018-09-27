@@ -1,0 +1,82 @@
+# /etc/bash.bashrc
+#loadkeys de-latin1
+
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# MAC addresses
+edimax_mac='74:da:38:27:ea:d0'
+alpha_mac='00:c0:ca:5a:4d:0a'
+raspi_mac='b8:27:eb:e4:4c:13'
+nic_mac='5c:e0:c5:d9:6a:de'
+# other constants
+git='https://github.com/skllrn'
+zan_music='/storage/emulated/0/Music/tmp/'
+zan_pic='/storage/emulated/0/DCIM/adb/'
+
+#prompt(s) [31->rot   32->grün   33->braun/gelb   34->blau   35->lila   36->türkis]
+PS1='\[\033[0;35m\]\u@\h\[\033[00m\]\[\033[0;37m\]:\w# \[\033[00m\]'
+#PS2='> '
+#PS3='> '
+#PS4='+ '
+
+# don't have the file
+[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+
+# ALIASE
+if [ -f ~/.bash_aliases ]; then
+     . ~/.bash_aliases
+fi
+
+######################################### CUSTOM ########################################
+
+xbindkeys
+
+#lucys Startups und tmp source
+for file in ~/Admin/Startups/*; do $file; done
+for file in /tmp/_*; do . $file; done
+
+export VISUAL="vim"
+
+#konichi wa - Willkommen
+#PyCharm="$HOME/Python/PyCharm"
+#   
+#   # FAST ACCESS
+       alias r="cd ~/Hack; clear; screenfetch -D debian; ls -l"
+#       alias ns="cd $PyCharm/NetworkSecurity; clear; ll"
+#       alias pnote="cd $python/2xNotebooks; jupyter notebook"
+#       alias tmp="cd /tmp; ls"
+#       alias .ssh="cd $HOME/.ssh; ls"
+#       alias .ipy="cd $HOME/.ipython/profile_default/startup; ll"
+#       alias .xinitrc="vim $HOME/.xinitrc"
+#   
+#   # Connections
+#   if [[ $home = 1 ]]; then
+#       alias nier="ssh -p 57722 -i $HOME/.ssh/id_rsa_nier root@nier.local"
+#   else
+#       alias nier="ssh -p 57722 -i $HOME/.ssh/id_rsa_nier root@skllrn.ddns.net"
+#   fi
+#       alias kelevra="ssh -p 57722 -i $HOME/.ssh/id_rsa_kelevra root@kelevra.local "
+#   
+#   # Most standard!
+#       alias ll="ls -la  --color=auto --sort=extension"
+#       alias ls="ls --color=auto --sort=extension"
+#       alias v_al="cd; vim .bash_aliases"
+#       alias src_al="cd; . .bash_aliases"
+#       alias v_ba="vim $HOME/.bashrc"
+#       alias src_ba="source $HOME/.bashrc"
+#       alias rm="rm -rf"
+#       alias n="nautilus . &"
+#   
+#   # Standard and specials
+#       alias i="ping google.de"
+#       alias ev="evince"
+#       alias gcc90="gcc -g -Wall -Wextra -pedantic -ansi"
+#       alias gcc="gcc -g -Wall -Wextra -pedantic"
+#       alias scan="nmap 192.168.2.1/24 -sP"
+#       alias off="sudo shutdown -h now"
+#       alias ipy="cd ~/Python; ipython --logfile=last_session.py"
+#       alias xclip="xclip -selection c"
+#       alias list_users="getent passwd |grep /bin/bash |cut -d ':' -f 1"
+
