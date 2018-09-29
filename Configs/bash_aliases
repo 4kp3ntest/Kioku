@@ -1,6 +1,10 @@
 #konichi wa - Willkommen
 # NEW ONES
     alias cookies="sqlite3 ~/.mozilla/firefox/22q3g1by.default/cookies.sqlite .dump"
+    alias pgrep="ps aux |grep --color"
+    alias ip="ip -c "
+    alias sc="systemctl "
+    alias scg="systemctl |grep "
 
 # FAST ACCESS
     alias r="cd; clear;./.index; ls; ls -l"
