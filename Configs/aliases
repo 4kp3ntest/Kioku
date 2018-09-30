@@ -9,8 +9,11 @@
 # FAST ACCESS
     alias r="cd; clear;./.index; ls; ls -l"
     alias ba="cd ~/Palast/BA/man-in-the-middle-attack"
+    alias mem="cd ~/Palast/Kioku"
     alias note="cd ~/Python/2xNotebooks"
     alias charm="cd ~/Python/PyCharm; clear; ls"
+    alias kioku="cd ~/Palast/Kioku; clear; ls"
+
     alias tmp="cd /tmp; ls"
     alias .ssh="cd $HOME/.ssh; ls"
     alias .ipy="cd $HOME/.ipython/profile_default/startup; ll"
@@ -28,8 +31,9 @@ fi
 # Most standard!
     alias ll="ls -la  --color=auto --sort=extension"
     alias ls="ls --color=auto --sort=extension"
-    alias v_al="cd; vim .bash_aliases"
-    alias src_al="cd; . .bash_aliases"
+    alias grep="grep --color"
+    alias v_al="cd; vim .aliases"
+    alias src_al="cd; . .aliases"
     alias v_ba="vim $HOME/.bashrc"
     alias src_ba="source $HOME/.bashrc"
     alias rm="rm -rf"
