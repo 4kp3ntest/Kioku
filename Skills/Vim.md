@@ -4,6 +4,11 @@ package: vim-runtime, gvim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 
+#to use visudo not with vi (deinstalled)
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+
 # install plugins in ~/.vimrc
 :PluginInstall
 
