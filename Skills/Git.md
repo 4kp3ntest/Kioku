@@ -1,5 +1,5 @@
 # Check if Gitlab uses same exact Syntax
-git clone <some repo>
+git clone --recurse-submodules -j8 <some repo>
 
 # Basic workflow 
 git add (-n) *
@@ -9,6 +9,10 @@ git push -u origin master
 # Show all branches of repo
 git branch -a
 git checkout <full/branch/name>
+
+# Merge develope into master
+(master) git merge develope
+git push
 
 
 # Set Config
@@ -31,9 +35,13 @@ git remote show origin
 ssh -vT git@github.com
 
 
+# Unrelated histories
+--allow-unrelated-histories
 
 
 # Add submodule
 git submodule add https://github.com/some/repo
 ##### info in .gitmodules
+git submodule init
+git submodule update 
 
