@@ -4,6 +4,9 @@ package: vim-runtime, gvim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 
+# Syntax highlighting Jenkins [TODO]
+#git clone git@github.com:martinda/Jenkinsfile-vim-syntax.git ~/.vim/bundle/Jenkinsfile-vim-syntax
+
 #to use visudo not with vi (deinstalled)
 export VISUAL=vim
 export EDITOR="$VISUAL"

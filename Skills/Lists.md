@@ -16,3 +16,6 @@ set(list|str)
 #### or to keep order
 from collections import OrderedDict
 "".join(OrderedDict.fromkeys(foo))
+
+# Make a dict from this set with all values 0
+d = dict.fromkeys(set, 0)
