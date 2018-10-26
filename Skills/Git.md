@@ -8,12 +8,12 @@ git push -u origin master
 
 # Show all branches of repo
 git branch -a
-git checkout <full/branch/name>
+git checkout <full/branch/name>  -> DETACHED HEAD
+git checkout <name>              -> Not detached head
 
 # Merge develope into master
 (master) git merge develope
 git push
-
 
 # Set Config
 git config 
@@ -35,7 +35,7 @@ git remote show origin
 ssh -vT git@github.com
 
 
-# Unrelated histories
+# Unrelated histories (if master is empty)
 --allow-unrelated-histories
 
 
@@ -44,4 +44,5 @@ git submodule add https://github.com/some/repo
 ##### info in .gitmodules
 git submodule init
 git submodule update 
+##### or git pull in submodule toplevel
 
