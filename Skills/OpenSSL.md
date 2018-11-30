@@ -1,4 +1,4 @@
-# Generate key pairs:
+# 1. Generate key pairs:
 ##(EC)DSA
         openssl genrsa -des3 -out myCA.key 2048
 	openssl dsaparam -genkey 1024 -out dsakey.pem
@@ -10,22 +10,28 @@
 	openssl ecparam -out ecparam.pem -name prime256v1
 	openssl genpkey -paramfile ecparam.pem -out ecdhkey.pem
 
-# Root CA - self signed cert with corresponding private key
-openssl req \
-	-x509 -nodes -days 365 -sha256 \
-	-subj '/C=DE/ST=Bavaria/L=Munich/CN=www.mitm@mixed-mode.com/O=bad/OU=ass' \
-	-newkey rsa:2048 -keyout RSA2048_private.pem \
-	-out RSA2048_cert.crt
-
-# Create a CSR
-    openssl req -out CSR.csr -key privateKey.key -new
+# 2. Create a CSR
+    openssl req -new -key CA_private.pem \
+    -subj '/C=DE/ST=Bavaria/L=Munich/O=Mixed-Mode/OU=BA-MitM-IoT/CN=CA/emailAddress=mitm@mixed-mode.de' \
+    -out CSR.csr 
     openssl req -out CSR.csr -new -newkey rsa:2048 -nodes -keyout privateKey.key
 
-# Sign the CSR with the CA
-    openssl x509 -req -days 360 -in CSR.csr -CA ca.cert.pem -CAkey ca.key.pem -CAcreateserial -out CRT.crt -sha256
+# 3. Sign the CSR with the CA
+    openssl req -x509 -days 3650 -sha256 \
+    -in CSR.csr -key CA_private.pem \
+    -out CA.crt
+#   -CAcreateserial \
 
-# Set start- and enddate with ca command
-    openssl ca -config /etc/ssl/openssl.cnf -policy policy_anything -outdir . -out clientcert.pem -startdate 120815080000Z -enddate 120815090000Z -cert RSA2048_cert.crt -keyfile RSA2048_private.pem -infiles CSR.csr
+# 1-3. Root CA - self signed cert with corresponding private key
+    openssl req \
+    -x509 -nodes -days 3650 -sha256 \
+    -subj '/C=DE/ST=Bavaria/L=Munich/O=Mixed-Mode/OU=EmbdSec/CN=BA-MitM-IoT/emailAddress=mitm@mixed-mode.de' \
+    -newkey rsa:2048 -keyout CA_private.pem \
+    -out CA_cert.crt
+
+
+# Generate Certificate Revocation List
+    -gencrl -out intermediate/crl/intermediate.crl.pem
 
 # Checks 
     openssl req -text -noout -verify -in CSR.csr

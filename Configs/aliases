@@ -11,12 +11,14 @@
     alias grep="grep --color"
     alias v_al="vim ~/.aliases"
     alias src_al="source ~/.aliases"
+    alias v_rc="vim ~/.zshrc"
+    alias src_rc="source ~/.zshrc"
     alias rm="rm -rf"
     alias off="sudo shutdown -h now"
 # Programms
     alias ipy="cd ~/Python; ipython --logfile=last_session.py"
     alias ev="evince"
-    alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
+    alias msfconsole="msfconsole -x \"db_connect ${USER}@msf\""
 # Functions
     alias list_users="getent passwd |grep /bin/bash |cut -d ':' -f 1"
     alias scan="nmap 192.168.2.1/24 -sP"
