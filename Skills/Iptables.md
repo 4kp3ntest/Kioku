@@ -24,3 +24,10 @@ iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 iptables -A OUTPUT -p tcp -d 192.168.1.110 -s 192.168.1.1 --tcp-flags RST RST -j DROP
 iptables -A FORWARD -i eth0 -o eth2 -s 192.168.1.0/24 -d 192.168.4.0/24 -j ACCEPT
 
+# Reroute ICMP/TCP [TODO]
+iptables -t nat -A PREROUTING -p tcp --dport 8888 -j DNAT --to-destination 192.168.10.1:9999
+iptables -t nat -A PREROUTING -p tcp --dport 8888 -j DNAT --to-destination 192.168.10.1:9999
+
+# Drop TCP packages with RST flag
+iptables -A OUTPUT -p tcp --tcp-flags RST RST -s 192.168.10.177 -j DROP
+iptables -A OUTPUT -p icmp -s 192.168.10.177 -j DROP

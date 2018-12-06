@@ -5,46 +5,42 @@
     alias ip="ip -c "
     alias sc="systemctl "
     alias scg="systemctl |grep "
-
-# FAST ACCESS
-    alias r="cd; clear;./.index; ls; ls -l"
-    alias ba="cd ~/Palast/BA/man-in-the-middle-attack"
-    alias mem="cd ~/Palast/Kioku"
-    alias note="cd ~/Python/2xNotebooks"
-    alias charm="cd ~/Python/PyCharm; clear; ls"
-    alias chop="cd ~/Python/PyCharm/Chopper; clear; ls"
-    alias kioku="cd ~/Palast/Kioku; clear; ls"
-
-    alias tmp="cd /tmp; ls"
-    alias .ssh="cd $HOME/.ssh; ls"
-    alias .ipy="cd $HOME/.ipython/profile_default/startup; ll"
-    alias .xinitrc="vim $HOME/.xinitrc"
-    alias killxbinds="ps aux |grep xbindkeys |tr -s ' ' | cut -d ' ' -f 2 |xargs kill"
-
-# Connections
-if [[ $home = 1 ]]; then
-    alias nier="ssh -p 57722 -i $HOME/.ssh/id_rsa_nier root@nier.local"
-else
-    alias nier="ssh -p 57722 -i $HOME/.ssh/id_rsa_nier root@skllrn.ddns.net"
-fi
-    alias kelevra="ssh -p 57722 -i $HOME/.ssh/id_rsa_kelevra root@kelevra.local "
-
 # Most standard!
     alias ll="ls -la  --color=auto --sort=extension"
     alias ls="ls --color=auto --sort=extension"
     alias grep="grep --color"
     alias v_al="vim ~/.aliases"
     alias src_al="source ~/.aliases"
+    alias v_rc="vim ~/.zshrc"
+    alias src_rc="source ~/.zshrc"
     alias rm="rm -rf"
-    alias n="nautilus . &"
-
-# Standard and specials
-    alias i="ping google.de"
+    alias off="sudo shutdown -h now"
+# Programms
+    alias ipy="cd ~/Python; ipython --logfile=last_session.py"
     alias ev="evince"
+    alias msfconsole="msfconsole -x \"db_connect ${USER}@msf\""
+# Functions
+    alias list_users="getent passwd |grep /bin/bash |cut -d ':' -f 1"
+    alias scan="nmap 192.168.2.1/24 -sP"
+    alias xclip="xclip -selection c"
+# FAST ACCESS
+    alias r="cd; clear;./.index; ls; ls -l"
+    alias n="nautilus ."
+    alias ba="cd ~/Palast/BA/man-in-the-middle-attack"
+    alias mem="cd ~/Palast/Kioku"
+    alias note="cd ~/Python/2xNotebooks"
+    alias charm="cd ~/Python/PyCharm; clear; ls"
+    alias chop="cd ~/Python/PyCharm/Chopper; clear; ls"
+    alias venv="cd ~/Python/4xVenv; clear; ls"
+    alias kioku="cd ~/Palast/Kioku; clear; ls"
+    alias tmp="cd /tmp; ls"
+    alias .ssh="cd $HOME/.ssh; ls"
+    alias .ipy="cd $HOME/.ipython/profile_default/startup; ll"
+    alias .xinitrc="vim $HOME/.xinitrc"
+    alias killxbinds="ps aux |grep xbindkeys |tr -s ' ' | cut -d ' ' -f 2 |xargs kill"
+# Connections
+    alias i="ping google.de"
+    alias kelevra="ssh -p 57722 -i $HOME/.ssh/id_rsa_kelevra root@kelevra.local "
+# Specials
     alias gcc90="gcc -g -Wall -Wextra -pedantic -ansi"
     alias gcc="gcc -g -Wall -Wextra -pedantic"
-    alias scan="nmap 192.168.2.1/24 -sP"
-    alias off="sudo shutdown -h now"
-    alias ipy="cd ~/Python; ipython --logfile=last_session.py"
-    alias xclip="xclip -selection c"
-    alias list_users="getent passwd |grep /bin/bash |cut -d ':' -f 1"
