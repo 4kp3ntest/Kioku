@@ -23,6 +23,7 @@ git config user.name 'Mona Lisa'
 # Set remote
 #### to use SSH
 git remote set-url origin git@github.com:skllrn/reponame.git
+    git@git.pixel-group.local:mixed-mode-security/static-analysis.git
 #### to use HTTPS
 git remote set-url origin https://github.com/skllrn/Kioku
 
