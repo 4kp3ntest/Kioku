@@ -4,6 +4,9 @@ dict.items()
 dict.keys()
 dict.values()
 
+# Create ascii_lowercase dict {'a':0, 'b':0 ...}
+d = dict((x, 0) for x in string.ascii_lowercase)
+
 # Create a dict with specific order
 from collections import OrderedDict
 "".join(OrderedDict.fromkeys(foo))

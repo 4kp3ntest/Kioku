@@ -20,7 +20,7 @@
     alias ip="ip -c "
 # Programms
     alias ipy="cd ~/Python; ipython --logfile=last_session.py"
-    alias ipython="ipython --logfile=last_session.py"
+    #alias ipython="ipython --logfile=last_session.py"
     alias msfconsole="msfconsole -x \"db_connect ${USER}@msf\""
     alias n="nautilus ."
     alias ev="evince"
@@ -33,7 +33,8 @@
 # FAST ACCESS
     alias r="cd; clear;./.index; ls; ls -l"
     alias .ipy="cd $HOME/.ipython/profile_default/startup; ll"
-    alias ba="cd /home/gnome/Palast/BA/man-in-the-middle-attack"
+    alias mitm="cd $HOME/.ipython/profile_MitM/startup; ll"
+    alias ba="cd /home/gnome/Palast/BA"
     alias sys="cd /etc/systemd/system/; clear; ls -l"
     alias chop="cd /home/gnome/Python/PyCharm/Chopper; clear; ls"
     alias charm="cd /home/gnome/Python/PyCharm; clear; ls"
