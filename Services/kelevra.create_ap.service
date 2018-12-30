@@ -3,7 +3,7 @@ Description=Creates WLAN AP on boot
 
 [Service]
 Type=simple
-ExecStart=/root/Palast/Kioku/Services/own.create_ap.sh
+ExecStart=/root/Palast/Kioku/Scripts/kelevra.create_ap.sh
 
 [Install]
 WantedBy=multi-user.target
