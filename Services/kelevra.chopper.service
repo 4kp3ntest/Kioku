@@ -1,0 +1,9 @@
+[Unit]
+Description=Test if Neo Pixel are responsive
+
+[Service]
+Type=simple
+ExecStart=/root/Chopper/Chopper/wecker.py
+
+[Install]
+WantedBy=multi-user.target

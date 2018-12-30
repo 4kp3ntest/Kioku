@@ -8,4 +8,5 @@ ipython profile create MitM
 # Magic commands
 whos
 save filename 1-xx (lines)
+colors
 

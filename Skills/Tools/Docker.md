@@ -1,6 +1,9 @@
 package: docker
 ===============
 
+# debug
+docker stats
+
 # find image
 docker search <substring>
 docker pull <image>

@@ -8,6 +8,9 @@ git push -u origin master
 
 # Show all branches of repo
 git branch -a
+# Create new branch
+git checkout -b my_local_branch
+# Checkout existing branches
 git checkout <full/branch/name>  -> DETACHED HEAD
 git checkout <name>              -> Not detached head
 
