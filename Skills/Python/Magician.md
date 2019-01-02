@@ -19,14 +19,6 @@ for key in keywords:
 months = dict((v,k) for k,v in enumerate(calendar.month_abbr))
 
 
-# deque - ordered collection with optimized access from its endpoints.
-from collections import deque
-queue = deque(['Valfaris', 'Ifrit', 'Ixion', 'Shiva'])
-queue.append('Bahamut')
-queue.popleft()
-queue.pop()
-
-
 # pickle
 class Company(object):
     def __init__(self, name, value):

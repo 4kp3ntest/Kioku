@@ -1,7 +1,7 @@
 [2, 1, 4, 2].count(2)
 >>> 2
 [2, 1, 4, 2].index(1)
->>> 2
+>>> 1
 
 # Sort a list
 sorted(list)
