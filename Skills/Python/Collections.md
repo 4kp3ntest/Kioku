@@ -20,3 +20,10 @@ queue = deque(['Valfaris', 'Ifrit', 'Ixion', 'Shiva'])
 queue.append('Bahamut')
 queue.popleft()
 queue.pop()
+
+# namedtuple
+### leightweight, easy to create class
+my_class = namedtuple('Anima', 'Attack, Defense, Speed')
+Ifrit = myclass(20, 23, 17)
+Ifrit.Attack
+>>> 20
