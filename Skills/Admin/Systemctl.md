@@ -3,7 +3,8 @@ systemctl start sshd.service
 
 # Config
 /etc/systemctl/system.conf
-
+## all config paths
+systemctl show --property=UnitPath
 
 # TIMERS
 systemctl list-timers

@@ -1,4 +1,5 @@
 # Change default shell
+echo $SHELL
 #### find path
 which bash | zsh
 #### change
