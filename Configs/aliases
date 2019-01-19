@@ -34,8 +34,8 @@
 # FAST ACCESS
     alias r="cd; clear;./.index; ls; ls -l"
     alias .ipy="cd $HOME/.ipython/profile_default/startup; ll"
-    alias mitm="cd $HOME/.ipython/profile_MitM/startup; ll"
-    alias iba="cd /home/gnome/Palast/BA/Testsystem/workdir; ipython --profile=MitM"
+    alias mitm="cd $HOME/.ipython/profile_Host/startup; ll"
+    alias iba="cd /home/gnome/Palast/BA/Testsystem/workdir; ipython --profile=Host"
     alias ba="cd /home/gnome/Palast/BA"
     alias sys="cd /etc/systemd/system/; clear; ls -l"
     alias chop="cd /home/gnome/Python/PyCharm/Chopper; clear; ls"

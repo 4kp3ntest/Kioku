@@ -1,6 +1,5 @@
 # Update
 pacman -Syu
-
 # Remove with unused depending packages
 pacman -Rs
 
@@ -14,3 +13,9 @@ pacman -Qql
 
 # Search for package string in remote
 pacman -Fs somestring
+
+
+# PGP keys
+pacman-key --init
+### arch ARM
+pacman-key --populate archlinuxarm

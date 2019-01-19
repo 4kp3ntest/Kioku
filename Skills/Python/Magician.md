@@ -1,19 +1,13 @@
-from collections import OrderedDict
-
+# virtual env
 python -m venv testerix
-source venv/bin/activate
+### python2.7
+virtualenv -p / usr / bin / python2 .7 -- clear venv_Host
 
-keywords = {'show':'search_menu', 'start':'start_menu'}
 
-print keywords.keys()
-print keywords.values()
-print keywords.items()
+# generators - ephemeral iterable 
+## yield returns a generator
 
-# get show >> give search_menu:
-for key in keywords:
-    if key == 'show':
-        value = keywords.get(key)
-        print value
+
 
 # create a [A-Z][a-z]{2} - [0-9] dictionary
 months = dict((v,k) for k,v in enumerate(calendar.month_abbr))
