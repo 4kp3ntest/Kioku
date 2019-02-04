@@ -2,19 +2,29 @@
 ##(EC)DSA
         openssl genrsa -des3 -out myCA.key 2048
 	openssl dsaparam -genkey 1024 -out dsakey.pem
-	openssl ecparam -genkey -out eckey.pem -name prime256v1
 ########openssl ecparam -list_curves
 ##(EC)DH
 	openssl dhparam -out dhparam.pem 1024
 	openssl genpkey -paramfile dhparam.pem -out dhkey.pem
-	openssl ecparam -out ecparam.pem -name prime256v1
-	openssl genpkey -paramfile ecparam.pem -out ecdhkey.pem
+
+# 1. Generate ECC key pair:
+    openssl ecparam -out privatekey.key -name prime256v1 -genkey 
+### or in two steps 
+    openssl ecparam -out ecparam.pem -name prime256v1
+    openssl genpkey -paramfile ecparam.pem -out ecdhkey.pem
+### public key
+    openssl ec -in ecprivkey.pem -pubout -out ecpubkey.pem
 
 # 2. Create a CSR
     openssl req -new -key CA_private.pem \
     -subj '/C=DE/ST=Bavaria/L=Munich/O=Mixed-Mode/OU=BA-MitM-IoT/CN=CA/emailAddress=mitm@mixed-mode.de' \
     -out CSR.csr 
     openssl req -out CSR.csr -new -newkey rsa:2048 -nodes -keyout privateKey.key
+
+# openssl req -config openssl.cnf \
+      -key private/ca.key.pem \
+      -new -x509 -days 7300 -sha256 -extensions v3_ca \
+      -out certs/ca.cert.pem
 
 # 3. Sign the CSR with the CA
     openssl req -x509 -days 3650 -sha256 \

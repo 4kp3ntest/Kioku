@@ -1,8 +1,10 @@
-package: iproute2
-=================
+# autostart WIFI (wpa_actiond)
+systemctl enalbe netctl-auto@wlan0.service
 
 # network devices under
 /sys/class/net
+
+#package: iproute2 
 
 # default GW/routes
 ## show, delete, add

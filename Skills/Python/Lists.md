@@ -3,6 +3,9 @@
 [2, 1, 4, 2].index(1)
 >>> 1
 
+# Copy a list
+new_list = l.copy()
+
 # Sort a list
 sorted(list)
 #### prefer lower case words 

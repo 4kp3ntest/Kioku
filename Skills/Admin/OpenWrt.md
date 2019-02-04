@@ -8,6 +8,8 @@ opkg update
 # Avahi - starts automatically it looks like
 opkg install avahi-daemon-service-ssh
 
+# Banner
+vim /etc/banner
 
 
 # Connect 

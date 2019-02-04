@@ -7,6 +7,7 @@ git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouComplet
 # Syntax highlighting Jenkins [TODO]
 #git clone git@github.com:martinda/Jenkinsfile-vim-syntax.git ~/.vim/bundle/Jenkinsfile-vim-syntax
 
+#TODO add to .zshrc
 #to use visudo not with vi (deinstalled)
 export VISUAL=vim
 export EDITOR="$VISUAL"

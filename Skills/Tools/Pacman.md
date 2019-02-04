@@ -14,6 +14,8 @@ pacman -Qql
 # Search for package string in remote
 pacman -Fs somestring
 
+# For recursively removing orphans and their configuration files
+pacman -Rns $(pacman -Qtdq)
 
 # PGP keys
 pacman-key --init

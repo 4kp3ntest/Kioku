@@ -5,6 +5,7 @@
     alias pgrep="ps aux |grep --color"
     alias scg="systemctl |grep "
     alias sc="systemctl "
+    alias androidstudio="/home/gnome/Hardware/Android/android-studio/bin/studio.sh &"
 # ROOT
     #alias dstop="docker stop $(docker ps -q)"
     #alias dkill="docker rm $(docker ps -aq)"
@@ -33,7 +34,7 @@
     alias xclip="xclip -selection c"
 # FAST ACCESS
     alias r="cd; clear;./.index; ls; ls -l"
-    alias .ipy="cd $HOME/.ipython/profile_default/startup; ll"
+    alias .ipy="cd $HOME/.ipython/; ll"
     alias mitm="cd $HOME/.ipython/profile_Host/startup; ll"
     alias iba="cd /home/gnome/Palast/BA/Testsystem/workdir; ipython --profile=Host"
     alias ba="cd /home/gnome/Palast/BA"
@@ -42,6 +43,7 @@
     alias charm="cd /home/gnome/Python/PyCharm; clear; ls"
     alias venv="cd /home/gnome/Python/4xVenv; clear; ls"
     alias kioku="cd /home/gnome/Palast/Kioku; clear; ls"
+    alias drive="cd /home/gnome/Palast/google-drive; ls"
     alias note="cd /home/gnome/Python/2xNotebooks"
     alias .ssh="cd $HOME/.ssh; ls"
     alias tmp="cd /tmp; ls"
