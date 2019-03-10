@@ -15,7 +15,11 @@ docker network create --subnet=192.168.1.0/24 --gateway=192.168.1.2 name
 docker network create --subnet=192.168.1.0/24 -o "com.docker.network.bridge.name"="target1" target1
 docker network connect rednet red1
 
+# docker build
+docker build -f some_dockerfile -t name:optional_tag .
+
 # RUN
+### every RUN statement is a new layer
 docker run -it --privileged --net rednet --name red1 --hostname red kali bash
 docker run -dt --privileged --net rednet --name red2 --hostname red --ip 192.168.1.120 kali bash
 docker build -t name /Path/to/Dockerfile

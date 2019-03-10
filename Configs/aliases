@@ -6,6 +6,9 @@
     alias scg="systemctl |grep "
     alias sc="systemctl "
     alias androidstudio="/home/gnome/Hardware/Android/android-studio/bin/studio.sh &"
+    alias freecad='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="$HOME/Hardware/freeCAD/:/root:rw" freecad freecad'
+    alias office='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="$HOME/Palast/BA/:/root:rw" office libreoffice'
+    alias jap="cd /home/gnome/Palast/Japanese; ll"
 # ROOT
     #alias dstop="docker stop $(docker ps -q)"
     #alias dkill="docker rm $(docker ps -aq)"
@@ -39,7 +42,6 @@
     alias iba="cd /home/gnome/Palast/BA/Testsystem/workdir; ipython --profile=Host"
     alias ba="cd /home/gnome/Palast/BA"
     alias sys="cd /etc/systemd/system/; clear; ls -l"
-    alias chop="cd /home/gnome/Python/PyCharm/Chopper; clear; ls"
     alias charm="cd /home/gnome/Python/PyCharm; clear; ls"
     alias venv="cd /home/gnome/Python/4xVenv; clear; ls"
     alias kioku="cd /home/gnome/Palast/Kioku; clear; ls"
