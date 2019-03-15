@@ -1,3 +1,3 @@
 #!/bin/bash
 
-create_ap -n wlan1 Hive avIs7QqkRQ7QlsgBqbnI
+create_ap wlan1 wlan0 Hive avIs7QqkRQ7QlsgBqbnI
