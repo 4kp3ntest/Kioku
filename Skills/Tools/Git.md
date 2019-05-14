@@ -12,7 +12,7 @@ git branch -a
 git checkout -b my_local_branch
 # Checkout existing branches
 git checkout <full/branch/name>  -> DETACHED HEAD
-git checkout <name>              -> Not detached head
+git checkout <name>              -> No detached head
 
 # Merge develope into master
 (master) git merge develope
@@ -21,7 +21,7 @@ git push
 # Set Config
 git config 
 git config --list
-git config user.name 'Mona Lisa'
+git config user.name 'skllrn'
 
 # Set remote
 #### to use SSH

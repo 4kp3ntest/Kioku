@@ -2,6 +2,8 @@
 pacman -Syu
 # Remove with unused depending packages
 pacman -Rs
+# Remove and do not care of dependencies
+pacman -Rdd
 
 # Query local database
 pacman -Q

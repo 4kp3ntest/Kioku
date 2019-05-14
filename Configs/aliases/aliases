@@ -1,14 +1,12 @@
 #konichi wa - Willkommen
 # NEW ONES
     alias cookies="sqlite3 ~/.mozilla/firefox/22q3g1by.default/cookies.sqlite .dump"
-    alias cal='echo -e "import calendar\nprint(calendar.TextCalendar().formatyear(2019))" |python'
     alias pgrep="ps aux |grep --color"
     alias scg="systemctl |grep "
     alias sc="systemctl "
-    alias androidstudio="/home/gnome/Hardware/Android/android-studio/bin/studio.sh &"
-    alias freecad='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="$HOME/Hardware/freeCAD/:/root:rw" freecad freecad'
-    alias office='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="$HOME/Palast/BA/:/root:rw" office libreoffice'
-    alias jap="cd /home/gnome/Palast/Japanese; ll"
+    alias androidstudio="$ANDROID/android-studio/bin/studio.sh &"
+    alias pycharm="/opt/pycharm-community-2019.1.1/bin/pycharm.sh &"
+    alias office='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" office libreoffice'
 # ROOT
     #alias dstop="docker stop $(docker ps -q)"
     #alias dkill="docker rm $(docker ps -aq)"
@@ -19,39 +17,40 @@
     alias src_rc="source ~/.zshrc"
     alias v_al="vim ~/.aliases"
     alias v_rc="vim ~/.zshrc"
+    alias v_pr="vim ~/.profile"
     alias off="sudo shutdown -h now"
     alias grep="grep --color"
     alias rm="rm -rf"
     alias ip="ip -c "
 # Programms
-    alias ipy="cd ~/Python; ipython --logfile=last_session.py"
-    #alias ipython="ipython --logfile=last_session.py"
-    alias msfconsole="msfconsole -x \"db_connect ${USER}@msf\""
+    #alias msfconsole="msfconsole -x \"db_connect ${USER}@msf\""
     alias n="nautilus ."
     alias ev="evince"
 # Functions
     alias killxbinds="ps aux |grep xbindkeys |tr -s ' ' | cut -d ' ' -f 2 |xargs kill"
     alias list_users="getent passwd |grep /bin/bash |cut -d ':' -f 1"
-    alias susp="/home/gnome/Admin/Scripts/suspend.sh"
-    alias scan="nmap 192.168.2.1/24 -sP"
+    alias scan="nmap -sP 192.168.2.1/24"
     alias xclip="xclip -selection c"
+    alias cal='echo -e "import calendar\nprint(calendar.TextCalendar().formatyear(2019))" |python'
 # FAST ACCESS
     alias r="cd; clear;./.index; ls; ls -l"
     alias .ipy="cd $HOME/.ipython/; ll"
-    alias mitm="cd $HOME/.ipython/profile_Host/startup; ll"
-    alias iba="cd /home/gnome/Palast/BA/Testsystem/workdir; ipython --profile=Host"
-    alias ba="cd /home/gnome/Palast/BA"
     alias sys="cd /etc/systemd/system/; clear; ls -l"
-    alias charm="cd /home/gnome/Python/PyCharm; clear; ls"
-    alias venv="cd /home/gnome/Python/4xVenv; clear; ls"
-    alias kioku="cd /home/gnome/Palast/Kioku; clear; ls"
-    alias drive="cd /home/gnome/Palast/google-drive; ls"
-    alias note="cd /home/gnome/Python/2xNotebooks"
+    alias venv="cd $VENV; clear; ls"
+    alias web="cd $ADMIN/Web; clear; ls"
+    alias kioku="cd $KIOKU; clear; ls"
+    alias note="cd $NOTEBOOKS"
     alias .ssh="cd $HOME/.ssh; ls"
     alias tmp="cd /tmp; ls"
+    alias share="cd /usr/local/share"
 # Connections
     alias i="ping google.de"
     alias kelevra="ssh -p 57722 -i $HOME/.ssh/id_rsa_kelevra root@kelevra.local "
 # Specials
     alias gcc90="gcc -g -Wall -Wextra -pedantic -ansi"
     alias gcc="gcc -g -Wall -Wextra -pedantic"
+
+# Source user specific aliases
+if [[ -e ~/.aliases_$USER ]]; then
+    source ~/.aliases_$USER
+fi

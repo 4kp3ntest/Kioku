@@ -103,9 +103,17 @@ export EDITOR="$VISUAL"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
+
+# User specific configs
+if [[ -e ~/.zshrc_$USER ]]; then
+    source ~/.zshrc_$USER
+fi
+
+# 
 source ~/.motto_aliases
+trap 'source /home/gnome/.motto_aliases' USR1
+bindkey -v
+
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-trap 'source $HOME/.motto_aliases' USR1

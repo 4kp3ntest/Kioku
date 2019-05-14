@@ -1,0 +1,3 @@
+
+alias freecad='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="$HOME/Maker/freeCAD/:/root:rw" freecad freecad'
+alias office='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="$HOME/Palast/BA/:/root:rw" office libreoffice'

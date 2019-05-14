@@ -1,17 +1,8 @@
-# virtual env
-python -m venv testerix
-### python2.7
-virtualenv -p / usr / bin / python2 .7 -- clear venv_Host
-
-
 # generators - ephemeral iterable 
 ## yield returns a generator
 
-
-
 # create a [A-Z][a-z]{2} - [0-9] dictionary
 months = dict((v,k) for k,v in enumerate(calendar.month_abbr))
-
 
 # pickle
 class Company(object):
