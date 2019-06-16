@@ -1,18 +1,19 @@
-# Check if Gitlab uses same exact Syntax
-git clone --recurse-submodules -j8 <some repo>
+# clone repo with all submodules
+git clone --recurse-submodules -j8 $somerepo
 
 # Basic workflow 
 git add (-n) *
 git commit -m 'some message'
 git push -u origin master
 
-# Show all branches of repo
+# Show (all) branches of repo
 git branch -a
 # Create new branch
-git checkout -b my_local_branch
+git checkout -b myLocalBranch
 # Checkout existing branches
-git checkout <full/branch/name>  -> DETACHED HEAD
-git checkout <name>              -> No detached head
+TODO - why and what was the issue with detached head
+git checkout /full/branch/name  -> DETACHED HEAD
+git checkout name               -> No detached head
 
 # Merge develope into master
 (master) git merge develope
@@ -23,25 +24,18 @@ git config
 git config --list
 git config user.name 'skllrn'
 
-# Set remote
-#### to use SSH
+# Remote
+## Set remote
+### to use SSH
 git remote set-url origin git@github.com:skllrn/reponame.git
     git@git.pixel-group.local:mixed-mode-security/static-analysis.git
-#### to use HTTPS
+### to use HTTPS
 git remote set-url origin https://github.com/skllrn/Kioku
-
-# Check remote
+## Check remote
 git remote -v
 git remote show origin
-
-
-# Test SSH keys
+## Test SSH keys
 ssh -vT git@github.com
-
-
-# Unrelated histories (if master is empty)
---allow-unrelated-histories
-
 
 # Add submodule
 git submodule add https://github.com/some/repo
@@ -49,4 +43,9 @@ git submodule add https://github.com/some/repo
 git submodule init
 git submodule update 
 ##### or git pull in submodule toplevel
+
+
+# Special flags
+## Unrelated histories (if master is empty)
+--allow-unrelated-histories
 

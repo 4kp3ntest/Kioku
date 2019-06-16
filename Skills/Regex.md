@@ -3,7 +3,6 @@ re.search(r'regex', string, re.[flag])
 #### returns match object
 re.findall(r'findall', 'for the win')
 
-
 # Special character
 .       # any char except \n -> see re.DOTALL
 ^       # start of string
@@ -14,13 +13,11 @@ $       # end of string
 {m,n}   # between m and n copies
 []      # set of characters
 
-
 # Defined sets
 \d      # [0-9]
 \D      # [^0-9]    # char in upper inverses selection
 \s      # [ \t\n\r\f\v] 
 \w      # [a-zA-Z0-9_] (with ASCII flag)
-
 
 (AND|and|And)
 
@@ -29,11 +26,12 @@ $       # end of string
 (?:)
 ### Positive & negative lookahead
 a(?=b) - a(?!b)
-
-second_appearance = re.match(r'[s][o](me)str', data).group(0) # matches 'me'
-
-
-
+## Replace string captured in group with re.sub and additional function
+```def regreplace(m): 
+    return m.group().replace(m.groups()[0], "'{}'".format(i[3]))
+reg = 'id == (' + str(i[0]) + ')[ \:]'
+output = re.sub(reg, reg_replace, output)```
+(find in the Worcester automate.py file)
 
 
 Examples

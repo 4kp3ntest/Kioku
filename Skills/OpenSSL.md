@@ -39,7 +39,6 @@
     -newkey rsa:2048 -keyout CA_private.pem \
     -out CA_cert.crt
 
-
 # Generate Certificate Revocation List
     -gencrl -out intermediate/crl/intermediate.crl.pem
 

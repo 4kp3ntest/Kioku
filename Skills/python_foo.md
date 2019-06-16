@@ -33,15 +33,6 @@ ror = lambda val, r_bits, max_bits: \
     ((val & (2**max_bits-1)) >> r_bits%max_bits) | \
     (val << (max_bits-(r_bits%max_bits)) & (2**max_bits-1))
 
-
-## Replace Capturing group in Regex
-def reg_replace(m):
-    return m.group().replace(m.groups()[0], "'{}'".format(i[3]))
-
-reg = 'id == (' + str(i[0]) + ')[ \:]'
-output = re.sub(reg, reg_replace, output)
-
-
 # find longest matching substring
 from difflib import SequenceMatcher
         match = SequenceMatcher(None, string1, string2)\

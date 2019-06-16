@@ -18,15 +18,12 @@ Advanced wipe
 Flash ROM with TWRP
 Flash TWRP
 
-
 # instructions here
 https://forum.xda-developers.com/pixel/development/rom-pixel-dust-sailfish-t3585007
-# Boot here
+## Boot here
 https://eu.dl.twrp.me/sailfish/
-# Root here
+## Root here
 https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445
-
-
 
 # Install .apk
 adb install FDroid.apk
