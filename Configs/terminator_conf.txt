@@ -12,7 +12,7 @@
   layout_launcher = <Primary><Alt><Super>9
   line_down = <Primary>j
   line_up = <Primary>k
-  new_tab = <Primary><Shift>Tab
+  new_tab = <Alt>t
   next_tab = <Primary>Tab
   page_down_half = <Primary><Alt>j
   page_up = <Primary><Alt><Super>8

@@ -34,6 +34,7 @@
     alias cal='echo -e "import calendar\nprint(calendar.TextCalendar().formatyear(2019))" |python'
 # FAST ACCESS
     alias r="cd; clear;./.index; ls; ls -l"
+    alias p="cd $PALAST; clear; ls"
     alias .ipy="cd $HOME/.ipython/; ll"
     alias sys="cd /etc/systemd/system/; clear; ls -l"
     alias venv="cd $VENV; clear; ls"
@@ -45,7 +46,6 @@
     alias share="cd /usr/local/share"
 # Connections
     alias i="ping google.de"
-    alias kelevra="ssh -p 57722 -i $HOME/.ssh/id_rsa_kelevra root@kelevra.local "
 # Specials
     alias gcc90="gcc -g -Wall -Wextra -pedantic -ansi"
     alias gcc="gcc -g -Wall -Wextra -pedantic"

@@ -1,3 +1,10 @@
+# Keyboard Layout
+## ARCH 
+localectl set-keymap --no-convert de-latin1-nodeadkeys #set persistent keymap in /etc/vconsole.con
+## RASPIAN
+raspi-config
+
+
 # Change default shell
 echo $SHELL
 #### find path
