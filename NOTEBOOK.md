@@ -4,6 +4,10 @@ https://github.com/Hack-with-Github/Awesome-Hacking
 # RADARE2 - Amazing intro to binary analysis
 https://github.com/ITAYC0HEN/A-journey-into-Radare2.git
 
+#CRAWL
+git clone https://github.com/killswitch-GUI/SimplyEmail.git
+theharvester
+
 # Mount qcow2 files
 modprobe nbd
 qemu-nbd --connect=/dev/nbd0 /path/to/qcow2file

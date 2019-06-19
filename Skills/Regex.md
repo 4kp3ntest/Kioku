@@ -1,4 +1,5 @@
 # Basic Syntax
+re.match try's to match @BEGINNING of str - use re.search instead
 re.search(r'regex', string, re.[flag])
 #### returns match object
 re.findall(r'findall', 'for the win')

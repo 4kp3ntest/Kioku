@@ -18,10 +18,12 @@ blue
 com
     wireless
     cable
-linux
-    network
-    system
-    kernel
+os
+    linux
+        network
+        system
+        kernel
+    windows
 
 adult
     money
@@ -36,10 +38,10 @@ hardware
     Infineon
     Nvidia
     Broadcom
-software
-    windows
+lang
+    jap
     python
-    android
+    java
 
 flora
 fauna
