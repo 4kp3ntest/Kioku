@@ -31,13 +31,19 @@ pad d1c0 # disassemble hex
 ## export as python code
 pcp 44 @ 0x4007a0
 
-# Debug mode
+## Debug mode
 dcu main
 open with -d flag or issue ood/doo from r2 shell
-## Hardware breakpoint 
+### Hardware breakpoint 
 drx 1 0x0040066d 1 x|w|r
-### show variable
+### List conditional jumps
+drc
+##### Set Zero flag
+dr zf=1
+#### show variable
 .afvd <var>
+#### rename variable
+afvn old new
 
 # Visual mode
     use V to get there
