@@ -31,19 +31,29 @@ pad d1c0 # disassemble hex
 ## export as python code
 pcp 44 @ 0x4007a0
 
-## Debug mode
+## Debug Mode 
+### Debug continue
 dcu main
 open with -d flag or issue ood/doo from r2 shell
-### Hardware breakpoint 
+### Debug Register
+dr rdi
+#### Hardware breakpoint 
 drx 1 0x0040066d 1 x|w|r
-### List conditional jumps
+#### List conditional jumps
 drc
 ##### Set Zero flag
 dr zf=1
+### Analyse
+#### analyse Refs
+axf/axt
 #### show variable
+afvd
 .afvd <var>
 #### rename variable
-afvn old new
+afvn new old
+
+### Print hex register (STACK)
+pxr @ rsp
 
 # Visual mode
     use V to get there
@@ -54,7 +64,7 @@ Start execution with s/S or F7/F8; F9 to continue
 # Craft exploit sequences with De Bruijn Sequence
 #### ragg2 -P 100 -r > pattern.txt
 ## see also 
-    # rahash2
+    # rahash2 to do all sorts of substitutions like rot13
     # rarun2
 
 
