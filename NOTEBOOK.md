@@ -1,12 +1,13 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
-# RADARE2 - Amazing intro to binary analysis
-https://github.com/ITAYC0HEN/A-journey-into-Radare2.git
+# Evaluate WordPress
+https://github.com/sammanthp007/WordPress-Pentesting-Setup
+$ wpscan
 
 #CRAWL
 git clone https://github.com/killswitch-GUI/SimplyEmail.git
-theharvester
+$ theharvester
 
 # Mount qcow2 files
 modprobe nbd

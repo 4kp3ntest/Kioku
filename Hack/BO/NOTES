@@ -1,0 +1,34 @@
+Basically a summary of the second part 
+
+The binary has two defense mechanisms:
+    - ASLR
+    - NX bit set
+means libraries are at differnt locations in memory each time, and stack is not executable.
+
+Attackvector is a Buffer overflow in scanf 
+Examining binary shows puts function is used
+
+1. Use ragg2 to find offset when return addr of scanf gets overwritten
+(Not mandatory and does not work if compiled for 64 bit -> cannot disable PIC)
+2. Find entrypoint of puts function in PLT and GOT
+3. Leak (changing/real) addr of puts with puts@plt(puts@got) executed by scanf
+4. Find addr of other important memory locations based on leak of puts and offsets
+5 Assemble second payload to spawn shell
+
+[*] To retry if I can exploit the problem write own exploit.py
+some reminders:
+
+    p = process("./megabeets_0x2")
+    p.clean()
+    p.sendline(payload)
+
+    leak = p.recv(4)
+    leak = u32(leak)
+    p.clean()
+
+    p.sendline(payload2)
+    p.clean()
+    p.interactive()
+
+    # p32 and u32 are required
+    # log is used for command line output
