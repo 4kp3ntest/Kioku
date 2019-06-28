@@ -1,6 +1,11 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
+# Important Linux files
+/etc/passwd
+/etc/shadow
+/etc/login.defs
+
 # Evaluate WordPress
 https://github.com/sammanthp007/WordPress-Pentesting-Setup
 $ wpscan

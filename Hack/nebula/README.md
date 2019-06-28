@@ -26,3 +26,8 @@ Just create a symlink to get pw of flag04 saved in token
 ## tar -xvzf backup -C /home/level05, ssh
 Backup folder accessible by all -> extract to any writeable folder
 (folder contains ssh key for flag05 account)
+
+#level06
+## /etc/passwd & /etc/shadow
+hash in /etc/passwd
+TODO - not cracked
