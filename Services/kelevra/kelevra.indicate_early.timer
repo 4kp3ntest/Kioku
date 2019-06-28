@@ -1,0 +1,9 @@
+[Unit]
+Description=Spark up Neo Pixel every full hour during wake time
+
+[Timer]
+OnCalendar=*-*-* 05:00:00
+AccuracySec=1s
+
+[Install]
+WantedBy=multi-user.target

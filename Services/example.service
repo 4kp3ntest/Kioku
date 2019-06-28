@@ -1,0 +1,9 @@
+[Unit]
+Description=Will be displayed by systemctl
+
+[Service]
+Type=simple
+ExecStart=/root/Palast/Kioku/Scripts/kelevra/kelevra.time_indicator.py
+
+[Install]
+WantedBy=multi-user.target

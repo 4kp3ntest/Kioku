@@ -1,0 +1,9 @@
+[Unit]
+Description=Gently indicate if it's time to get up with NeoPixels@JapLamp
+
+[Service]
+Type=simple
+ExecStart=/root/Palast/Kioku/Scripts/kelevra/kelevra.indicate_off.py
+
+[Install]
+WantedBy=multi-user.target

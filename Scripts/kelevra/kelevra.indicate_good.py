@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 
-from Chopper import *
 import time
+import sys
 
-chopper = Chopper()
-n = chopper.n1
+sys.path.append('/root/lucy')
+from Lucy import Lucy
 
-n.fill(n.red)
-time.sleep(5)
-n.off()
+lucy = Lucy()
+c = lucy.c
+
+c.psend(color=(0, 1, 0, 0))
 #i = 0
 #while i < 500:
 #    n.fill(n.rand_color())

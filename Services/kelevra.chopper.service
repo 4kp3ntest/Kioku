@@ -1,9 +1,0 @@
-[Unit]
-Description=Test if Neo Pixel are responsive
-
-[Service]
-Type=simple
-ExecStart=/root/Palast/Scripts/kelevra.chopper.py
-
-[Install]
-WantedBy=multi-user.target
