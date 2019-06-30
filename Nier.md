@@ -1,1 +1,5 @@
-TODO - either check if html source has changed or update display of kiosk mode cyclic every second or so
+Chromium displays hmtl.index regardless of apache2.service beeing active or not!?
+
+# Setup
+### Kiosk mode
+/etc/xdg/openbox/autostart
