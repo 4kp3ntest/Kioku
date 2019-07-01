@@ -1,0 +1,12 @@
+user: hummingbirdscyber
+
+
+Stage 1
+GET USER ACCESS
+
+Found backup files of group, passwd, shadow and gshadow in /var/backups
+Docker is installed - can definitly use it for something
+
+
+RESSOURCES
+/usr/share/dict/cracklib-small
