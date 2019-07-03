@@ -17,3 +17,16 @@ apt install ip2
 apt search ip
 apt search ip-address
 exit
+ls
+ip a
+exit
+ip a
+ping 10.0.0.200
+ping 10.0.0.1
+exit
+ls
+vim /etc/bin/db.intra.domain.com 
+vim /etc/bin/named.conf.local 
+ls /etc/bind/
+exit
+exit

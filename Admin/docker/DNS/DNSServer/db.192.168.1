@@ -1,0 +1,16 @@
+;
+; BIND reverse data file for 1.168.192.in-addr.arpa
+;
+$TTL 604800
+@ IN SOA ns.intra.domain.com. root.ns.intra.domain.com. (
+                    15060902 ; Serial
+                      604800 ; Refresh
+                       86400 ; Retry
+                     2419200 ; Expire
+                    604800 ) ; Negative Cache TTL
+;
+@           IN     NS      ns1.intra.domain.com.
+@           IN     NS      ns2.intra.domain.com.
+1           IN     PTR     www.intra.domain.com.
+2           IN     PTR     ns1.intra.domain.com.
+3           IN     PTR     ns2.intra.domain.com.

@@ -1,13 +1,17 @@
-ARG IMAGE_VERSION
-FROM python:$IMAGE_VERSION
+FROM debian:latest
 
-WORKDIR /usr/src/app
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive && apt-get install -y tcpdump iptables 
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive && apt-get install -y \
+    vim \
+    bind9 \
+    tcpdump \
+    python3 \
+    python3-pip \
+    iptables 
+
+COPY db.intra.domain.com /etc/bind/db.intra.domain.com
+COPY named.conf.local /etc/bind/named.conf.local
 
 COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
-
-#ENV FLASK_APP=app.py
-#CMD ipython 
