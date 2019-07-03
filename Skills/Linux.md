@@ -9,6 +9,9 @@ shadow
 sysctl.conf
 passwd
 
+## var
+log/syslog
+
 
 # System Info
 

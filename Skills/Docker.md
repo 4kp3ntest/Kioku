@@ -32,10 +32,12 @@ sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root
 android:thyrlian /opt/android-studio/bin/studio.sh
 
 # docker-compose
+## DO NOT HAVE LINES CONTAINING TABS IN FILE
 docker-compose up/down #automatically creates dedicated bridge interface and removes it afterwards
 docker-compose ps
 docker-compose logs
 docker-compose top
+
 
 
 # Plug & Play Repos
