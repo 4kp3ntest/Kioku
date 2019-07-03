@@ -40,15 +40,14 @@ SOA : Start of Authority
 
 
 ## qtypes
-SOA RR: Parameter der Zone, wie z. B. Gültigkeitsdauer oder Seriennummer, festgelegt.
-NS RR: Verknüpfungen (Delegierungen) der Server untereinander realisiert.
-(Mit folgenden Record-Typen werden die eigentlichen Daten definiert:)
-A RR: name to IPv4-addr
-AAAA RR: name to IPv6-addr
-CNAME RR: verweist von einem Namen auf einen anderen Namen.
-MX RR: weist einem Namen einen Mailserver zu. Er stellt eine Besonderheit dar, da er sich auf einen speziellen Dienst im Internet, nämlich die E-Mailzustellung mittels SMTP, bezieht. Alle anderen Dienste nutzen CNAME, A und AAAA Resource Records für die Namensauflösung.
-PTR RR: weist einer IP-Adresse einen Namen zu (Reverse Lookup) und wird für IPv4 und IPv6 gleichermaßen benutzt, nur für IPv4 unterhalb der Domain „IN-ADDR.ARPA.“ und für IPv6 unterhalb von „IP6.ARPA.“.
-TXT RR: kann einem Namen einen frei definierbaren Text zuweisen (Spamabwehr)
+SOA RR:     Parameter der Zone, wie z. B. Gültigkeitsdauer oder Seriennummer, festgelegt.
+NS RR:      Verknüpfungen (Delegierungen) der Server untereinander realisiert.
+A RR:       name to IPv4-addr
+AAAA RR:    name to IPv6-addr
+CNAME RR:   points from one name to another
+MX RR:      references name to MAILSERVER -> SMTP #special
+PTR RR:     references IP addr to name (Reverse Lookup) IPv4 & IPv6! 
+TXT RR:     kann einem Namen einen frei definierbaren Text zuweisen (Spamabwehr)
 
 [definition in nsswitch.conf in hosts table]
 
