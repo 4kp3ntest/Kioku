@@ -1,6 +1,9 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
+# list all open file descriptors
+ls -la /proc/$$/fd
+
 # Important Linux files
 /etc/passwd
 /etc/shadow

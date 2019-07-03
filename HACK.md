@@ -1,8 +1,7 @@
 TODO - detailed writedown of the first three Boxes: brainpan, fristileaks & HackInOS
 
-# hacky stuff
+FIXME - can not use Cutter as root -> created user kali can not connect to X display
 
-# TODO search for content in many files 
 
 
 # TODO
@@ -19,7 +18,6 @@ aireplay-ng --deauth 100 -a $some_MAC -c $other_MAC $mon"
 
 # start snort [NOT TESTED]
 snort -de -i vboxnet0 --daq-dir /usr/lib/daq -c /etc/snort/snort.conf -l /var/log/snort/
-
 
 # spoof user agent
 from urllib.request import urlopen, Request

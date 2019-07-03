@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  server:
+    build: 
+        context: DNSServer/
+        args:
+            - IMAGE_VERSION=slim
+    image: dns:server
+    volumes: 
+        - ./Files:/root 
+#   environment:
+#       - FLASK_ENV=development
+#   ports:
+#       - 5000:5000
+    privileged: true
+    command: tail -F /dev/null
+
+  client:
+    build: 
+        context: Client/
+        args:
+            - IMAGE_VERSION=alpine3.9
+    image: dns:client
+    command: tail -F /dev/null

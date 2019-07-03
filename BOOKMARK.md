@@ -1,4 +1,7 @@
 # BOOKMARK STRUCTURE
+TODO - create file automatically based on bookmarks.html
+planned effort 2h 
+
 red
     tools
         recon
@@ -18,7 +21,12 @@ blue
 com
     wireless
     cable
-os
+admin
+    proto
+        TCP
+        UDP
+        TLS
+        DNS
     linux
         network
         system
@@ -42,12 +50,11 @@ lang
     jap
     python
     java
-
 flora
 fauna
+tmp
 
-##Everything in misc should be @toolbar
+TODO - Everything in misc should be @toolbar
 misc
     (local stuff here)
-tmp
 
