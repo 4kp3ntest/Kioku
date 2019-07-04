@@ -14,6 +14,7 @@
 #include <string.h>
 #include <unistd.h>
 
+#define LEVELNAME "stack_one"
 #define BANNER \
   "Welcome to " LEVELNAME ", brought to you by https://exploit.education"
 

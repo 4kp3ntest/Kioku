@@ -1,6 +1,6 @@
-Very easy to crack but nevertheless provides two new concepts
+Very easy to crack, nevertheless provides two new concepts:
 
-- structs -> looks pretty transparent in assembler
+- structs: looks pretty transparent in assembler -> user space/programmer aid
 - volatile variables
 
 (reminder) volatile: retrieval of value can not be optimized and is always taken from hardware reg
