@@ -33,8 +33,14 @@ admin
         kernel
     windows
 
-adult
-    money
+tutorial
+
+goto
+    youtube
+    netflix usw.
+
+money
+
 maker
     printer
     laser
