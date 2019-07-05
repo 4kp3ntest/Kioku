@@ -1,15 +1,3 @@
-Bash stuff
-
-#TODO kill all processes based on regex
-# make außerdem einen count für bash functions/actions
-
-# Important (conf) files and paths
-/etc/pacman.conf
-/etc/pacman.d/mirrorlist
-/usr/share/doc/arch-wiki/html
-
-apt-cache search something
-
 # Shared folder
 mount -t vboxsf -o uid=$UID,gid=$(id -g) Shared ~/host
 
@@ -24,13 +12,6 @@ find / -xdev \( -perm -4000 \) -type f -print0 | xargs -0 ls -l
 
 # Start cups service to find printers in network (NOT WORKING)
 systemctl start org.cups.cupsd.service
-
-adb pull /storage/emulated/0/WhatsApp/Media/WhatsApp\ Images/
-adb pull /storage/emulated/0/DCIM/Camera/
-
-# Trust problem on kelevra
- pacman-key --init
- pacman-key --populate archlinuxarm
 
 # Download content of webpage
 wget -p -r -E -e robots=off --convert-links -U mozilla --level 1 some.site

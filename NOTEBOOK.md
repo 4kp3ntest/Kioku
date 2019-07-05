@@ -1,6 +1,9 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
+## BSS section
+containing statically-allocated variables
+
 ## Evaluate WordPress
 https://github.com/sammanthp007/WordPress-Pentesting-Setup
 $ wpscan

@@ -3,10 +3,12 @@
 ## etc
 login.defs
 hosts
-    name resolution
+    -> name resolution for DNS
 resolv.conf
 shadow
 sysctl.conf
+pacman.conf
+pacman.d/mirrorlist
 passwd
 
 ## var
