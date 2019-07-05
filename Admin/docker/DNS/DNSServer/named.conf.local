@@ -6,7 +6,7 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "intra.domain.com" {
+zone "rednet.badass" {
     type master;
-    file "/etc/bind/db.intra.domain.com";
+    file "/etc/bind/db.rednet.badass";
 };

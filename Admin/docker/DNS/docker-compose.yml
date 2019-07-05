@@ -2,26 +2,35 @@ version: '2'
 
 services:
   server:
-#   build: 
-#     context: DNSServer/
+    build: 
+      context: DNSServer/
     image: dns:server
     volumes: 
       - ./Files:/root 
     privileged: true
     networks:
       rednet:
-        ipv4_address: 10.0.0.100 
-    command: tail -F /dev/null
+        ipv4_address: 10.0.0.10 
+    command: service bind9 start && tail -F /dev/null
 
-  client:
+  alice:
     build: 
-      context: Client/
-      args:
-        - IMAGE_VERSION=alpine3.9
-    image: dns:client
+      context: Alice/
+    image: dns:alice
     networks:
       rednet:
-        ipv4_address: 10.0.0.200
+        ipv4_address: 10.0.0.100
+    command: tail -F /dev/null
+
+  python_alice:
+    build: 
+      context: PythonAlice/
+      args:
+        - IMAGE_VERSION=alpine3.9
+    image: dns:python_alice
+    networks:
+      rednet:
+        ipv4_address: 10.0.1.100
     command: tail -F /dev/null
 
 networks:

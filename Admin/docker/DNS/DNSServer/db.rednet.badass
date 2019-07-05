@@ -1,0 +1,21 @@
+;
+; BIND data file for domain rednet.badass 
+;
+$TTL 604800
+@ IN SOA ns1.rednet.badass. root.ns.rednet.badass. (
+                     15060901 ; Serial
+                       604800 ; Refresh
+                        86400 ; Retry
+                      2419200 ; Expire
+                     604800 ) ; Negative Cache TTL
+;
+@           IN      NS      ns1.rednet.badass.
+@           IN      NS      ns2.rednet.badass.
+@           IN      MX 10   mail.rednet.badass.
+@           IN      TXT     Text
+ns1         IN      A       10.0.0.10
+;ns2         IN      A       192.168.1.3
+nameserver1 IN      CNAME   ns1.rednet.badass.
+;nameserver2 IN      CNAME   ns2.rednet.badass.
+boss        IN      A       10.0.0.100
+www         IN      A       10.0.0.20
