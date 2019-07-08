@@ -1,4 +1,4 @@
-TODO - show functions of Admin - Hack - [Maker] on use of 'r'
+TODO - Cura not working anymore, probably a Python problem because downgrading did not solve the issue and in VBox it is working as expected
 
 TODO - execute script on shutdown 
 so far:

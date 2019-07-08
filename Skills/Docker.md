@@ -1,6 +1,9 @@
 package: docker
 ===============
 
+## test installation
+docker run hello-world
+
 ## debug
 docker stats
 

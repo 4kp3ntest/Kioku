@@ -33,12 +33,11 @@
     alias xclip="xclip -selection c"
     alias cal='echo -e "import calendar\nprint(calendar.TextCalendar().formatyear(2019))" |python'
 # FAST ACCESS
-    alias r="cd; clear; ls; ls -l"
+#   alias r="cd; clear; ls; ls -l"
     alias p="cd $PALAST; clear; ls"
     alias .ipy="cd $HOME/.ipython/; ll"
     alias sys="cd /etc/systemd/system/; clear; ls -l"
     alias venv="cd $VENV; clear; ls"
-    alias web="cd $ADMIN/Web; clear; ls"
     #TODO probably put those in a 'have_kioku.aliases file' 
     alias kioku="cd $HOME/Palast/Kioku; clear; ls"
     alias skills="cd $HOME/Palast/Kioku/Skills; clear; ll"

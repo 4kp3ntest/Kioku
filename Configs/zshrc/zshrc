@@ -114,7 +114,9 @@ if [ -f ~/.motto_aliases ]; then
 fi
 # 
 trap 'source /home/gnome/.motto_aliases' USR1
-bindkey -v
+
+# Use Vim keybinds in shell
+#bindkey -v
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
