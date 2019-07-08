@@ -1,6 +1,15 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
+TODOs
+    - track cura bug issue
+    - execute script on shutdown 
+        so far:
+            service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
+            script in /bin/clean_home
+    - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
+
+
 ## BSS section
 containing statically-allocated variables
 

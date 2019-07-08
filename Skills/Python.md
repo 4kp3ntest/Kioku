@@ -1,10 +1,10 @@
-# Awesome modules
-pycryptodome
-pwntools
-scapy
+# Modules
 boofuzz
-pytesseract
 PIL
+pwntools
+pycryptodome
+pytesseract
+scapy
 
 
 # Python magic

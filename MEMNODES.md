@@ -21,5 +21,3 @@ ASLR
 Dirty COW
 De Brujin
 
-#Ideas
-Integrity, Authentication, Non Repudiation, Secrecy, ? as COLORS (small objects with distinct color)

@@ -1,14 +1,12 @@
-TODO - detailed writedown of the first three Boxes: brainpan, fristileaks & HackInOS
+TODOs 
+    - detailed writedown of the first three Boxes: brainpan, fristileaks & HackInOS
+    - Hacking the Art of Exploitation: add booksrc and prepare it as C reference
 
-FIXME - can not use Cutter as root -> created user kali can not connect to X display
+FIXMEs
+    - can not use Cutter as root -> created user kali can not connect to X display
 
 
-
-# TODO
 nmap -PN -sA -vv -n -p1-1000 -T4 -oNmapACKScan.txt 117.X.X.X
-
-# HwPrInZc bssid 00:12:43:15:18:90
-iface="$(ifconfig | grep 00:c0:ca:5a:4d:0* | cut -d' ' -f1)"
 
 # [NOT TESTED]
 airmon-ng start $iface
