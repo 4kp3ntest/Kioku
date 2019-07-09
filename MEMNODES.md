@@ -1,16 +1,13 @@
 #Planted
-Diffie-Hellman
-    ephemeral to provide FS
-RSA
-    ECB - CCM - GCM
+AES
+CSS
 DSA
-    Integrity - Auth - NonRep
-CSS - Cross-Site-Scripting
+Diffie-Hellman
+DNS Blackhole
+RSA
 WPA3
 SAE
 4-Way-Handshake
-    Beacons
-DNS Blackhole
 
 #Waiting
 SELinux
