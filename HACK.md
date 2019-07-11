@@ -2,9 +2,6 @@ TODOs
     - detailed writedown of the first three Boxes: brainpan, fristileaks & HackInOS
     - Hacking the Art of Exploitation: add booksrc and prepare it as C reference
 
-FIXMEs
-    - can not use Cutter as root -> created user kali can not connect to X display
-
 
 nmap -PN -sA -vv -n -p1-1000 -T4 -oNmapACKScan.txt 117.X.X.X
 

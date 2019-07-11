@@ -1,13 +1,13 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
-TODOs
-    - track cura bug issue
-    - execute script on shutdown 
-        so far:
-            service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
-            script in /bin/clean_home
-    - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
+TODO - track cura bug issue
+TODO - execute script on shutdown 
+    so far:
+        service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
+        script in /bin/clean_home
+TODO - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
+TODO - I want a shell TRAP @ work that broadcasts a defined variable to all open terminals
 
 
 ## BSS section

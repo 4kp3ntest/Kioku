@@ -40,7 +40,7 @@
     alias venv="cd $VENV; clear; ls"
     #TODO probably put those in a 'have_kioku.aliases file' 
     alias kioku="cd $HOME/Palast/Kioku; clear; ls"
-    alias skills="cd $HOME/Palast/Kioku/Skills; clear; ll"
+    alias skills="cd $HOME/Palast/Kioku/Skills; ll"
 
     alias note="cd $NOTEBOOKS"
     alias .ssh="cd $HOME/.ssh; ls"
