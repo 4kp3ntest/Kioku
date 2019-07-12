@@ -7,7 +7,6 @@ TODO - execute script on shutdown
         service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
         script in /bin/clean_home
 TODO - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
-TODO - I want a shell TRAP @ work that broadcasts a defined variable to all open terminals
 TODO - check what I got in store PHP wise @ root (with PsySH)
 TODO - for Python relevant stuff make a Notebook rather than a .md file (Python.md)
 
