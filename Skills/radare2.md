@@ -26,6 +26,8 @@ e search.in = dbg.maps
 ## Show hex of reg
 px 44 rbp
 pad d1c0 # disassemble hex 
+## find ROP gadgets
+/R sub ebx, 10 or whatever
 
 # Interface commands
 ## export as python code
