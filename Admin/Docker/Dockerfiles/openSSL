@@ -1,0 +1,5 @@
+FROM x86:default
+
+RUN pacman -S --noconfirm \
+    wget \
+    base-devel
