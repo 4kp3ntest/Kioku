@@ -25,11 +25,10 @@ ip link set name my_interface dev eth0
 # connect to wifi and enable autostart
 wifi-menu
 pacman -S wpa_actiond avahi
-systemctl enalbe netctl-auto@wlan0.service
+systemctl enable netctl-auto@wlan0.service
 systemctl enable avahi-daemon
 
-
-# wpa_supplicant.conf
+## wpa_supplicant.conf
 network={
                ssid="home"
                priority=1 # higher wins, default is 0
