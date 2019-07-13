@@ -1,4 +1,4 @@
-package: vim-runtime, gvim
+package: vim-runtime, gvim, vim-gtk on raspian
 ==========================
 # Install vundle & YouCompleteMe
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -18,10 +18,17 @@ export EDITOR="$VISUAL"
 
 # YouCompleteMe needs to be compiled after downloading
 cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
 python3 install.py
 
-# Source from within file
+# Tricks
+## Source from within file
 :source %
+## Shared Clipboard on remote host
+req:    vim with clipboard support (gvim/vim-gtk), xauth installed
+add 'ForwardX11 yes, ForwardX11Trusted yes' to .ssh/config
+(set clipboard=unnamedplus in .vimrc)
+
 
 # Substitute
 ## everywhere
