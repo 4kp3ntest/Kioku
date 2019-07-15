@@ -1,5 +1,4 @@
 TODO - create own AP if no netctl profile available
-TODO - check if second interface is still up
 
 ## Services
 ### Indicate time

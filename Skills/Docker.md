@@ -46,5 +46,5 @@ docker-compose top
 https://github.com/ethicalhack3r/DVWA.git
 docker run --rm -it -p 8000:80 vulnerables/web-dvwa
 ## Apache
-httpd 
+docker run --rm -it -p 8000:80 -v $PWD/fristi:/usr/local/apache2/htdocs/index.html httpd
 /usr/local/apache2/htdocs/index.html
