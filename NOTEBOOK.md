@@ -6,15 +6,16 @@ TODO - execute script on shutdown
        so far:
        service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
        script in /bin/clean_home
-TODO - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
-TODO - check what I got in store PHP wise @ root (with PsySH)
 TODO - for Python relevant stuff make a Notebook rather than a .md file (Python.md)
+TODO - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
+TODO - Lucy: save current pixel configuration -> will need dedicated function to restore
 
 ## Django Docker
 1. define relative WSGIPythonPath to django project -> see django-apache2-docker/demo_site.conf
 2. Add wsgi.py file in demo_site/demo_site/ & link to demo_site.settings
 3. Add WSGI_APPLICATION = 'demo_site.wsgi.application' in demo_site/demo_site/settings.py
-4. Enjoy?
+4. Rebuild Dockerfile
+5. Enjoy?
 
 
 ## BSS section
