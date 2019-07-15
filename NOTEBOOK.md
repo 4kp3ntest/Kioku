@@ -9,6 +9,7 @@ TODO - execute script on shutdown
 TODO - for Python relevant stuff make a Notebook rather than a .md file (Python.md)
 TODO - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
 TODO - Lucy: save current pixel configuration -> will need dedicated function to restore
+TODO - Upload PHP reverse shell onto (own) webserver
 
 ## Django Docker
 1. define relative WSGIPythonPath to django project -> see django-apache2-docker/demo_site.conf
