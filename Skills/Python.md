@@ -1,11 +1,13 @@
 # Modules
 boofuzz
+pexpect
 PIL
+pip-autoremove
 pwntools
 pycryptodome
 pytesseract
 scapy
-pip-autoremove
+shutil
 
 # Reminders ;)
 ## generators -> a ephemeral iterable (what yield returns)

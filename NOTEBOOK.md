@@ -7,7 +7,6 @@ TODO - execute script on shutdown
        service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
        script in /bin/clean_home
 TODO - for Python relevant stuff make a Notebook rather than a .md file (Python.md)
-TODO - Kioku: Rename 'Shell' skill to Bash and create a new Shell skill with cmnd line utilities
 TODO - Lucy: save current pixel configuration -> will need dedicated function to restore
 TODO - Upload PHP reverse shell onto (own) webserver
 

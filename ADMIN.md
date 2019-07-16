@@ -18,3 +18,6 @@ wget -p -r -E -e robots=off --convert-links -U mozilla --level 1 some.site
 
 # Generate QR code for Wifi
 qrencode -o wifi.png "WIFI:S:Hive;T:WPA2;P:avIs7QqkRQ7QlsgBqbnI;;"
+
+## Run .img file with QEMU
+qemu-system-i386 -drive format=raw,if=floppy,file=test.img -nographic
