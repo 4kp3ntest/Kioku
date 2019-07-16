@@ -1,4 +1,5 @@
-# IF
+# Basic Programming Features
+## if - else
 if [[ expr ]]; then
     do stuff
 elif [[ expr ]]; then
@@ -7,19 +8,18 @@ else
     ...
 fi
 
-# LOOP
+## for loop
 for y in {1..99..2}; do
     echo $y
 done
 
-# FUNCTION
+## Function
 bash_function() {
     echo Argumente werden nummeriert addressiert: $1 ist arg 1
-    cat $2 # ist arg 2
 }
-bash_function "hallo" file.txt
+bash_function "hallo Welt" 
 
-# Array
+## Array
 arr[0]="2 million"
 arr[1]="1 million"
 arr[2]="3 million"
@@ -29,8 +29,7 @@ for X in "${array[@]}"; do
     echo $X
 done
 
-
-# EOF multiline output -------------------
+## EOF multiline output -------------------
 cat << EOF
 usage: up [--level <n>| -n <levels>][--help][--version]
 
@@ -44,32 +43,12 @@ while IFS='' read -r line; do
     tasks+=("$line")
 done < "$file"
 
-# random Random--------------------------
+## random Random--------------------------
 rand=$[$RANDOM%3]
 echo ${arr[$rand]}
 #----------------------------------------
 
-# Length of string 
+## Length of string 
 string = 'hallo welt'
 echo ${#string} # no '$' !
 
-# SED
-#### Get print line range of textfile
-sed -n 12,22p file
-
-# TR
-#### switch parentheses
-cat file | tr '()' '[]'
-
-
-# SORT
-#### sort input based on third column (column seperated by blanks or tab)
-sort -k 3,3 file
-#### same but with ',' as delimiter
-sort -t ',' -k 3,3 file
-
-# PASTE
-#### not super useful - just changes tabs to ';'
-cat file | paste -s ';'
-#### now it gets useful - merge three lines like this: a,b,c\n
-paste -s ',,\n'
