@@ -1,6 +1,0 @@
-FROM base/archlinux
-
-RUN pacman -Syu --noconfirm \
-    man-pages \
-    iproute2 \
-    vim \

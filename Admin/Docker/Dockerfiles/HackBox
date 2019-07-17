@@ -1,4 +1,4 @@
-FROM x86:default
+FROM ubuntu:latest
 
 RUN pacman -Syu --noconfirm \
     python2 \
