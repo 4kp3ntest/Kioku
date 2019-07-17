@@ -2,11 +2,8 @@
 # NEW ONES
     alias cookies="sqlite3 ~/.mozilla/firefox/22q3g1by.default/cookies.sqlite .dump"
     alias pgrep="ps aux |grep --color"
-    alias scg="systemctl |grep "
-    alias sc="systemctl "
-    alias androidstudio="$ANDROID/android-studio/bin/studio.sh &"
-    alias pycharm="/opt/pycharm-community-2019.1.1/bin/pycharm.sh &"
-    alias office='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" office libreoffice'
+    alias sjs="jupyter notebook --allow-root --no-browser $HOME/Palast/Kioku/Polyglot/Python/Notebooks &"
+    alias kjs="pkill jupyter"
 # ROOT
     #alias dstop="docker stop $(docker ps -q)"
     #alias dkill="docker rm $(docker ps -aq)"
@@ -20,6 +17,7 @@
     alias v_pr="vim ~/.profile"
     alias off="sudo shutdown -h now"
     alias grep="grep --color"
+    alias sc="systemctl "
     alias rm="rm -rf"
     alias ip="ip -c "
 # Programms
@@ -38,11 +36,10 @@
     alias .ipy="cd $HOME/.ipython/; ll"
     alias sys="cd /etc/systemd/system/; clear; ls -l"
     alias venv="cd $VENV; clear; ls"
+    alias notebook="vim $HOME/NOTEBOOK.md"
     #TODO probably put those in a 'have_kioku.aliases file' 
     alias kioku="cd $HOME/Palast/Kioku; clear; ls"
     alias skills="cd $HOME/Palast/Kioku/Skills; ll"
-
-    alias note="cd $NOTEBOOKS"
     alias .ssh="cd $HOME/.ssh; ls"
     alias tmp="cd /tmp; ls"
     alias share="cd /usr/local/share"
