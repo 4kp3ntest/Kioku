@@ -16,7 +16,7 @@ shutil
 # Jupyter
 ## generate config
 jupyter notebook --generate-config
-## Allow external ip
+## Allow external IP (existing config file $HOME/.jupyter)
 c.NotebookApp.allow_origin = '192.168.56.1'
 c.NotebookApp.ip = '0.0.0.0' # listen on all IPs
 

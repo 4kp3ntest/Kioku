@@ -8,14 +8,9 @@ TODO - execute script on shutdown
        script in /bin/clean_home
 TODO - for Python relevant stuff make a Notebook rather than a .md file (Python.md)
 TODO - Lucy: save current pixel configuration -> will need dedicated function to restore
-TODO - Upload PHP reverse shell onto (own) webserver
-
-## Django Docker
-1. define relative WSGIPythonPath to django project -> see django-apache2-docker/demo_site.conf
-2. Add wsgi.py file in demo_site/demo_site/ & link to demo_site.settings
-3. Add WSGI_APPLICATION = 'demo_site.wsgi.application' in demo_site/demo_site/settings.py
-4. Rebuild Dockerfile
-5. Enjoy?
+TODO - Upload PHP reverse shell onto (own) webserver, REQUIRES: docker container with apache & PHP
+TODO - declutter and extend Dockerfiles folder
+TODO - Evaluate Docker Setups and discard flask-redis
 
 
 ## BSS section

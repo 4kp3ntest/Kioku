@@ -14,3 +14,4 @@ PsySH file copied to /bin works as expected but if I delete folder vendor from c
 # MISC
 .phar - php archive
 .php
+print & echo write to php://output not to php://stdout
