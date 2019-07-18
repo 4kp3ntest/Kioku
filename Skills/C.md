@@ -1,6 +1,11 @@
 # Pointer arithmetic
 see 2_pointer.c (TODO)
 
+# Memory Layout
+.bss  -> statically-allocated variables
+.text -> Code
+.data -> Constants
+
 
 # Programm Startup
 http://www.dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html

