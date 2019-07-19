@@ -7,11 +7,16 @@ Does not work via Git
     - in psysh: composer install
 Works:
 composer require psy/psysh:@stable
-
-#TODO
-PsySH file copied to /bin works as expected but if I delete folder vendor from command above it breaks
+composer g require psy/psysh:@stable #for global
 
 # MISC
 .phar - php archive
-.php
+.php simply use html in it
+.html PHP in it -> .htaccess file
 print & echo write to php://output not to php://stdout
+
+$_GET
+$_POST -> has to load a new page to provide input to PHP function (without AJAX/JavaScript)
+
+
+Superglobals
