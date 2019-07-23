@@ -7,18 +7,15 @@ opkg install kmod-usb-storage block-mount kmod-fs-ext4
 ## FTP Server
 opkg install vsftpd
 
-# OpenWrt uses init.d
-/etc/init.d/vsftpd enable
-/etc/init.d/vsftpd start
-
 # Configure as Client
 uci set network.lan.ipaddr='192.168.2.122'
 uci set network.lan.gateway='192.168.2.1'
 uci set network.lan.dns='192.168.2.1'
 uci commit && service network restart 
 
-# Banner
-vim /etc/banner
+# Start Services (OpenWrt uses init.d)
+/etc/init.d/vsftpd enable
+/etc/init.d/vsftpd start
 
 # Connect 
 ssh root@OpenWrt.local
@@ -26,6 +23,11 @@ ssh root@OpenWrt.local
 ssh oW
 
 # Shutdown alternative
-Openwrt uses reboot, halt or poweroff commands
+reboot, halt or poweroff
 
 
+# MISC
+## Banner
+vim /etc/banner
+## OpenWrt uses gluon for command line administration
+https://github.com/freifunk-gluon/gluon/wiki/Commandline-administration

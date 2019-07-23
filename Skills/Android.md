@@ -1,13 +1,19 @@
 # ADB
 ## connect via adb
 adb connect host_ip:5555
-
 ## Probably some backup routine soon
 adb pull /storage/emulated/0/WhatsApp/Media/WhatsApp\ Images/
 adb pull /storage/emulated/0/DCIM/Camera/
-
 ## Install .apk
 adb install FDroid.apk
+## Get apk of installed App (VERIFY)
+adb shell pm list packages
+abd pull /data/app/com.twitter.android-1.apk
+
+
+# Reverse engineer
+d2j-dex2jar App.apk #to make .jar file
+apktool d App.apk
 
 
 # Clean Flash (Custom ROM)

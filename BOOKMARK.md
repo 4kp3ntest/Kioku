@@ -21,17 +21,17 @@ blue
 com
     wireless
     cable
-admin
-    proto
-        TCP
-        UDP
-        TLS
-        DNS
-    linux
-        network
-        system
-        kernel
-    windows
+
+proto
+    TCP
+    UDP
+    TLS
+    DNS
+linux
+    network
+    system
+    kernel
+windows
 
 tutorial
 

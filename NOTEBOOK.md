@@ -14,6 +14,9 @@ TODO - Extract and add Tridactyl config
 TODO - detailed writedown of the first three Boxes: brainpan, fristileaks & HackInOS
 TODO - Hacking the Art of Exploitation: prepare booksrc as C reference
 TODO - Kelevra: create own AP if no netctl profile available
+TODO - do-nothing script https://jamielinux.com/docs/openssl-certificate-authority/introduction.html
+TODO - download datasheets
+    http://www.ti.com/lit/ds/symlink/pca9306.pdf
 
 
 ## PHP
@@ -26,6 +29,8 @@ Need to define some shortcuts to make it useful (already blacklistadd url)
 
 
 
+# UpTo's
+https://wiki.archlinux.org/index.php/simple_stateful_firewall
 
 ## Evaluate WordPress
 https://github.com/sammanthp007/WordPress-Pentesting-Setup
