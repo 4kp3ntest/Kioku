@@ -15,6 +15,7 @@ TODO - detailed writedown of the first three Boxes: brainpan, fristileaks & Hack
 TODO - Hacking the Art of Exploitation: prepare booksrc as C reference
 TODO - Kelevra: create own AP if no netctl profile available
 TODO - do-nothing script https://jamielinux.com/docs/openssl-certificate-authority/introduction.html
+TODO - I want pseudo random Syntax highlighting like in r2
 TODO - download datasheets
     http://www.ti.com/lit/ds/symlink/pca9306.pdf
 
@@ -30,6 +31,11 @@ Need to define some shortcuts to make it useful (already blacklistadd url)
 
 
 # UpTo's
+### (learn sed)
+http://www.grymoire.com/Unix/Sed.html#uh-4a 
+### Docker NAT Setup
+https://www.karlrupp.net/en/computer/nat_tutorial
+### Next Step is to have some sort of firewall
 https://wiki.archlinux.org/index.php/simple_stateful_firewall
 
 ## Evaluate WordPress
