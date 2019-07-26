@@ -3,41 +3,67 @@
 import sys
 import re
 import string
+import ipdb
 
 """
-The idea is to parse my bookmarks by the provided tags to better group and structurize them together
+Parse a bookmarks.html file by the provided tags
+Group and structurize them together by common tags (order is important atm)
 
-reads a bookmark.html file as cmd arg and creates a BOOKMARKS.md file from it
+param arg:  bookmark.html file 
+returns:    BOOKMARKS.md file
 """
+def add_to_nested_list_at_index(nested_list, index_list, sub_list):
+    # Goto right index
+    nested_list = eval(sublist_from_index(index_list))
+    # Append sub_list
+    nested_list.append(sub_list)
 
+def sublist_from_index(index_list):
+    """
+    returns:            String that evaluates to part of nested_list
+    """
+    ret = 'nested_list'
+    for i in index_list:
+        ret += '[{}]'.format(i)
 
-def find_tag_index(index, value, index_list, nested_list):
-    if not nested_list: #first entry
-        ret = 0
-    else:
-        n = len(index_list)
-        for i in 
+    return ret
 
+def find_tag_index(index, tag, index_list, nested_list):
+    """
+    Function receives a specific tag searches for it in nested_list
+    and returns its index if found, 0 otherwise
 
+    param nested_list:  structurized representation of entries
+    param index_list:   starting point searching in nested list (previous tag found)
+    param index:
+    param tag:        
+
+    returns:            index of the already present tag in nested_list, 0 if not found
+    """
+    ret = -1 
+    nested_list = eval(sublist_from_index(index_list))
+
+    for i in range(len(nested_list)):
+        # Return Index if found
+        if tag == nested_list[i][0]:
+            ret = i
+            break
 
     return ret
 
 def convert_tag_list_to_nested_list(tag_list):
     """
     Convert a list of tags to the corresponding nested tags 
-    [[tag1, [tag11, tag12], [tag2]] 
+    returns: list with this format [tag1, [tag11, [tag111]]] 
     """
-    N = len(tag_list)
-    s1, s2 = '"', '.format('
-
-    for i in range(n):
-        s1 += '[{},'
-        s2 += 'tag_list['+str(i)+'], '
-
-    ret = eval(s1+']'*n+'"'+s2+')')
-    return ret
+    try:
+        ret = [tag_list[0]]
+        for i in range(1, len(tag_list)):
+            eval('ret{}.append([tag_list[i]])'.format((i-1)*'[1]'))
+        return ret
+    except Exception as err:
+        print(err)
         
-
 
 def main():
     try:
@@ -76,24 +102,23 @@ def main():
     [[tag0, [tag00, [tag000, tag001], tag01]], [tag1], [tag2, [tag20]]] 
     """
     nested_list = []
-    for entry in polished_entries:
+    for entry in polished_entries[1:]:
         tags = entry[1] #list
         name = entry[2] #string
         index_list = []
 
+        print(entry)
         for i, val in enumerate(tags):
             new_index = find_tag_index(i, val, index_list, nested_list)
-            if new_index:
+            if new_index != -1:
                 index_list.append(new_index)
             else: 
-                #TODO index_list beachten
-                nested_list.append(convert_tag_list_to_nested_list(tags))
+                # Add (unique part of) tags+name @ right index in nested_list
+                unique_tag_list = convert_tag_list_to_nested_list(tags[i:]+[name])
+                add_to_nested_list_at_index(nested_list, index_list, unique_tag_list)
                 break
     
-
-        tmp = convert_tag_list_to_nested_list(tags)
-        print(tmp)
-    
+    ipdb.set_trace(context=7)
     print('[*] Bookmark count: {}'.format(len(polished_entries)))
 
 

@@ -41,6 +41,10 @@ colors
 ### Auto reload (put in startup file)
 get_ipython().magic(u"%reload_ext autoreload")
 get_ipython().magic(u"%autoreload 2")
+## Debug
+%debug 
+import ipdb; ipdb.set_trace()
+
 
 
 
