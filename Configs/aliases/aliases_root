@@ -1,0 +1,11 @@
+if [[ $(hostname) == root ]]; then
+
+    alias kioku="cd /home/gnome/Palast/Kioku; clear; ls"
+    alias skills="cd /home/gnome/Palast/Kioku/Skills; ll"
+    alias sjs="jupyter notebook --allow-root --no-browser \
+    /home/gnome/Palast/Kioku/Polyglot/Python/Notebooks &"
+
+fi 
+
+dstop() { docker stop $(docker ps -q) }
+dkill() { docker rm $(docker ps -aq) }

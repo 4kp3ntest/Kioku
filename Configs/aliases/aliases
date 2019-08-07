@@ -4,9 +4,6 @@
     alias pgrep="ps aux |grep --color"
     alias sjs="jupyter notebook --allow-root --no-browser $HOME/Palast/Kioku/Polyglot/Python/Notebooks &"
     alias kjs="pkill jupyter"
-# ROOT
-    #alias dstop="docker stop $(docker ps -q)"
-    #alias dkill="docker rm $(docker ps -aq)"
 # Most standard!
     alias ll="ls -la  --color=auto --sort=extension"
     alias ls="ls --color=auto --sort=extension"
