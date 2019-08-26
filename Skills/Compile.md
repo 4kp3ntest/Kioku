@@ -10,9 +10,11 @@ nasm -f elf64 assembly.s
 ld -S assembly.o
 
 ## Flags
+#### Canary
 -fno-stack-protector
 -fno-pic
 -no-pie
+#### NX Bit
 -z execstack
 
 # Exploit Mitigation

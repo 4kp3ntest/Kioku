@@ -27,6 +27,9 @@ git checkout name               -> No detached head
 # Merge develope into master
 (master) git merge develope
 git push
+## Force pull
+git fetch --all
+git reset --hard origin/master
 
 # Set Config
 git config 

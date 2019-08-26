@@ -1,12 +1,15 @@
-<h2>MOOORTY</h2>
+<html>
 
-<h4>MORTY C137</h4>
+    <h2>MOOORTY</h2>
+    <h4>MORTY C137</h4>
+
+</html>
+
 
 <?php
 
-echo "<p>Aah.. uuh Rick.. you think this is right?</p>";
-
-if (!empty($_POST["command"])) {
-    echo "<p>Um.. Ooh Rick.. I cannot ".$_POST["command"]."</p>";
-}
+    echo "<p>Aah.. uuh Rick.. you think this is right?</p>";
+    if (!empty($_POST["command"])) {
+        echo "<p>I'm pretty sure I cannot ".$_POST["command"]."</p>";
+    }
 ?>
