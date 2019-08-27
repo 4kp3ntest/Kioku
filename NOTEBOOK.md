@@ -1,17 +1,14 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
-<<<<<<< Updated upstream
-TODO - execute script on shutdown 
-       so far:
-=======
 Vokabelkarten anlegen !
 
+TODO - defined/useful docker setups (Apache Server, Scapy, DVA) callable with aliases
+TODO - Check vimrc use of real tabs in specific folder
 TODO - execute script on shutdown DOES NOT WORK
->>>>>>> Stashed changes
        service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
        script in /bin/clean_home
-       remove: .gdb_history, .python_history, .motto_aliases!
+       should remove: .gdb_history, .python_history, .motto_aliases!
 TODO - Lucy: save current pixel configuration -> dedicated function to restore
 TODO - Python: relevant stuff make a Notebook rather than a .md file (Python.md)
 TODO - Docker: declutter and extend Dockerfiles folder
@@ -19,19 +16,14 @@ TODO - Docker: evaluate Setups and discard flask-redis
 TODO - Tridactyl: Add config to Kioku
 TODO - Hack: writedown of the first three Boxes: brainpan, fristileaks & HackInOS
 TODO - Kelevra: create own AP if no netctl profile available
-<<<<<<< Updated upstream
 TODO - do-nothing script https://jamielinux.com/docs/openssl-certificate-authority/introduction.html
-TODO - I want pseudo random Syntax highlighting like in r2
 TODO - Clean and add a working zshrc to Kioku
-=======
 TODO - Python: add Ipython profiles to Kioku
         - Hack (abgespeckte Version von kalis module set)
 TODO - System: when connected to VPN, local network not working (add iptables (?) )
 TODO - System: set random MAC on boot
 TODO - System: Externe Festplatte ausmisten
 TODO - System: System Backup machen
-
->>>>>>> Stashed changes
 
 # NOTES
 ## New Tools

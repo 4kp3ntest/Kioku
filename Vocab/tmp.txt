@@ -1,5 +1,0 @@
-Lead Acid Batteries	Cheap, high power output capacity but very low power density (7 Wh/kg) 2V Cells
-Alkaline	NOT RECHARGEABLE, Cells are 1.5V, 100 Wh/kg
-Nickel Cadmium	Cells are 1.2V, 60 Wh/kg
-Nickel Metal Hydride	Self discharge quickly, Cells are 1.25V, 100 Wh/kg
-Lithium-Polymer	Ultra light, Expensive, Cells are 3.6V, 185 Wh/kg

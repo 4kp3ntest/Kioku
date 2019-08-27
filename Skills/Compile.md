@@ -12,7 +12,8 @@ ld -S assembly.o
 ## Flags
 #### Canary
 -fno-stack-protector
--fno-pic
+#### No position independent executable
+[-fno-pic]
 -no-pie
 #### NX Bit
 -z execstack

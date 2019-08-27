@@ -11,7 +11,6 @@
     </form>
     
     <!-- MORTY -->
-    <form enctype="multipart/form-data" action="Summer.php" method="POST">
     <form action="Morty.php" method="post"><br>
         <p>What should Morty do?</p>
         <input type="text" name="command"/><br><br>
