@@ -15,7 +15,10 @@ ip route add default via 172.18.0.2 dev eth0
 # enable promisc mode
 ip link set eth1 promisc on
 
-# change MAC address
+# change address
+### IP
+ip addr add 192.168.1.111/24 dev wlp2s0
+### MAC
 ip link set dev eth0 address ff:ff:ff:ff:ff:ff
 macchanger -r device
 

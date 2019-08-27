@@ -15,6 +15,8 @@ sed -n 12,22p file
 ## tr
 #### switch parentheses
 cat file | tr '()' '[]'
+#### squeeze repeated characters
+cat Batteries.txt | tr -s '\t' > tmp.txt
 
 ## sort
 #### sort input based on third column (column seperated by blanks or tab)

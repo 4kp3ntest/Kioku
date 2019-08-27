@@ -1,6 +1,5 @@
 # BOOKMARK STRUCTURE
 TODO - create file automatically based on bookmarks.html
-planned effort 2h 
 
 red
     tools

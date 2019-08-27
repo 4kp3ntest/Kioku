@@ -1,0 +1,3 @@
+test	test
+Auto	くるま
+くるま	Auto

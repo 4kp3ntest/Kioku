@@ -7,5 +7,24 @@ if [[ $(hostname) == root ]]; then
 
 fi 
 
-dstop() { docker stop $(docker ps -q) }
+dstop() { docker kill $(docker ps -q) }
 dkill() { docker rm $(docker ps -aq) }
+
+
+
+anki_sync_server_start() {
+
+    docker run -dit \
+    --mount type=bind,source="/home/gnome/Admin/Anki/data",target=/app/data \
+    -p 27701:27701 \
+    --name anki-container \
+    --rm \
+    kuklinistvan/anki-sync-server:latest &
+
+}
+
+anki_sync_server_stop() {
+#   Kill the process
+#   kill -9 $(ps aux |grep anki-container |grep -v grep | tr -s ' ' |cut -d ' '  -f 2)
+    docker kill anki-container
+}

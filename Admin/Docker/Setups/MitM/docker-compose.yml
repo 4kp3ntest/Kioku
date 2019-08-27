@@ -1,25 +1,26 @@
 version: '3'
 
 services:
+
   alice:
-    build: 
-        context: Alice/
-        args:
-            - IMAGE_VERSION=slim
-    image: red:alice
+    hostname: Alice
+    image: own:Alice
     volumes: 
         - ./Files:/root 
     environment:
         - FLASK_ENV=development
-#   ports:
-#       - 5000:5000
     privileged: true
     command: tail -F /dev/null
 
   bob:
-    build: 
-        context: Bob/
-        args:
-            - IMAGE_VERSION=alpine3.9
-    image: red:bob
+    hostname: Bob
+    image: own:Bob
+    privileged: true
     command: tail -F /dev/null
+
+
+networks:
+
+    default:
+        external:
+            name: rednet
