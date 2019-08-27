@@ -1,7 +1,13 @@
 
 # [CONFIG]
-cp Configs/zshrc ~/.zshrc
-cp Configs/vimrc ~/.vimrc
+rm $HOME/.vimrc
+rm $HOME/.zshrc
+rm $HOME/.config/terminator/config
+#TODO check user to determine which Shell config and aliases to use
+ln -s $PWD/Configs/zshrc/zshrc $HOME/.zshrc
+ln -s $PWD/Configs/aliases/aliases $HOME/.aliases
+ln -s $PWD/Configs/vimrc $HOME/.vimrc
+ln -s $PWD/Configs/terminator_conf.txt $HOME/.config/terminator/config
 
 # [VIM] Install vundle & YouCompleteMe
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

@@ -13,7 +13,6 @@ http://www.dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html
 execve() creates stack; pushes argc, argv & envp
 
 1. _start:
-(I actually cannot find it in some random C source)
 pop argc into rsi & argv into rcx
 push arguments for _libc_start_main on stack
     eax - 8th arg for alignment

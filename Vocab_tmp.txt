@@ -1,0 +1,3 @@
+Executable and Linkable Format (ELF)
+Memory Segments 
+Sections         Text, Data, BSS, Stack, Heap

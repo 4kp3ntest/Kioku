@@ -1,7 +1,6 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
-TODO - track cura bug issue
 TODO - execute script on shutdown 
        so far:
        service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
@@ -16,8 +15,7 @@ TODO - Hacking the Art of Exploitation: prepare booksrc as C reference
 TODO - Kelevra: create own AP if no netctl profile available
 TODO - do-nothing script https://jamielinux.com/docs/openssl-certificate-authority/introduction.html
 TODO - I want pseudo random Syntax highlighting like in r2
-TODO - download datasheets
-    http://www.ti.com/lit/ds/symlink/pca9306.pdf
+TODO - Clean and add a working zshrc to Kioku
 
 
 ## PHP
