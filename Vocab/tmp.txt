@@ -1,0 +1,8 @@
+WPA2 CCMP#basiert auf AES, nutzt Counter Mode CBC-MAC protocol
+Simple Service Discovery Protocol#Windows UDP 1900, for UPnP devices
+Internet Group Management Protocol#Organisation von Multicast Gruppen, nur IPv4 -> ICMPv6 hat integriertes Multicast Listener Discovery als Ersatz
+Iptables standard policies#ACCEPT, REJECT, DROP
+Iptables standard chains#INPUT, OUTPUT, FORWARD
+Iptables most important matches#-s source, -d destination, -p protocol, -i in-interface, -o out-interface
+Network Address Translation/IP Masquerade#Maps multiple local IPs to one public IP
+

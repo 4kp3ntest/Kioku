@@ -48,15 +48,6 @@ filetype plugin indent on    " required
 " Enable syntax highlighting
 syntax on
 
-" Split Navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-" Change Tabs
-nnoremap <C-j> :bprev<CR>                                                                            
-nnoremap <C-k> :bnext<CR>
-
 " CUSTOM
 set background=dark
 "colorscheme slate
@@ -189,6 +180,9 @@ set pastetoggle=<F11>
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+" Make an exception for Vocab lists
+:autocmd BufRead,BufNewFile $HOME/Palast/Kioku/Vocab/* setlocal noexpandtab
 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " two characters wide.

@@ -1,7 +1,8 @@
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 
-Vokabelkarten anlegen !
+## Attack on Docker Setup
+https://i.blackhat.com/us-18/Thu-August-9/us-18-McGrew-An-Attacker-Looks-At-Docker-Approaching-Multi-Container-Applications-wp.pdf
 
 TODO - defined/useful docker setups (Apache Server, Scapy, DVA) callable with aliases
 TODO - Check vimrc use of real tabs in specific folder
