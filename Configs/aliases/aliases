@@ -1,4 +1,6 @@
 #konichi wa - Willkommen
+HOSTNAME=$(hostname)
+
 # NEW ONES
     alias cookies="sqlite3 ~/.mozilla/firefox/22q3g1by.default/cookies.sqlite .dump"
     alias pgrep="ps aux |grep --color"
@@ -35,7 +37,7 @@
     alias venv="cd $VENV; clear; ls"
     alias notebook="vim $HOME/NOTEBOOK.md"
     #TODO probably put those in a 'have_kioku.aliases file' 
-    alias kioku="cd $HOME/Palast/Kioku; clear; ls"
+    alias kioku="cd $HOME/Palast/Kioku; clear; ll"
     alias skills="cd $HOME/Palast/Kioku/Skills; ll"
     alias .ssh="cd $HOME/.ssh; ls"
     alias tmp="cd /tmp; ls"
@@ -46,7 +48,10 @@
     alias gcc90="gcc -g -Wall -Wextra -pedantic -ansi"
     alias gcc="gcc -g -Wall -Wextra -pedantic"
 
-# Source user specific aliases
+# Source user and host specific aliases
 if [[ -e ~/.aliases_$USER ]]; then
     source ~/.aliases_$USER
+fi
+if [[ -e ~/.aliases_$HOSTNAME && $HOSTNAME != root ]]; then
+    source ~/.aliases_$HOSTNAME
 fi

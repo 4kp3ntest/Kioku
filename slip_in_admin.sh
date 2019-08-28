@@ -11,5 +11,4 @@ ps -u "$(id -u)" -o pid -o command | while read -r pid args; do
     fi
 done
 
-# Change bg to badass tux
 $ADMIN/Scripts/3xGnome/c_back.sh favs/badass_tux.jpg

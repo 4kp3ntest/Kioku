@@ -1,0 +1,18 @@
+Executable and Linkable Format (ELF)	Executable format of Linux File System. Consists of Segments and Sections
+Difference segments and sections in ELF	segments: dynamic information for runtime execution (and contains 0 or more) sections: static information for linking and relocation
+Memory Sections	Text, Data, BSS, Stack, Heap
+advanced multi-layered unification filesystem (aufs)	removed from Debian buster, caused docker daemon to fail because old containers used it -> removed /var/lib/docker, successor: OverlayFS(2)
+PHP file upload Attack vectors	MIME type verification (change in POST request), Blacklisting, Double Extension, PHP script as comment in image header, .htaccess in upload root
+Kali NetHunter	Project to bring kali to Android                       
+Samsung Knox	mobile security solution for companies
+WPA2 CCMP   basiert auf AES, nutzt Counter Mode CBC-MAC protocol
+Temporal Key Integrity Protocol	predecessor of CCMP
+Linux System Log File	/var/log/syslog
+Simple Service Discovery Protocol   Windows UDP 1900, for UPnP devices
+Universal Plug and Play (UPnP)	Protocol collection for discovery between devices even without Router, since 2016 Teil der Open Connectivity Foundation
+Internet Group Management Protocol  Organisation von Multicast Gruppen, nur IPv4 -> ICMPv6 hat integriertes Multicast Listener Discovery als Ersatz
+Iptables standard policies  ACCEPT, REJECT, DROP
+Iptables standard chains    INPUT, OUTPUT, FORWARD
+Iptables most important matches	-s source, -d destination, -p protocol, -i in-interface, -o out-interface
+Network Address Translation/IP Masquerade   Maps multiple local IPs to one public IP
+

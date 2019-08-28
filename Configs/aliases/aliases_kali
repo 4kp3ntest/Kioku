@@ -1,0 +1,17 @@
+alias 1='echo Rick is the greates Hacker of them all!!!'
+
+
+alias hack='cd /root/Hack; clear; ll'
+alias play='cd /root/Hack/Playground; clear; ll'
+alias admin='cd /root/Admin; clear; ll'
+alias scrap='cd /root/Admin/Scrapyard; clear; ll'
+alias sjs='jupyter notebook --allow-root --no-browser'
+
+dkill() { docker kill $(docker ps -q) }
+drmv() { docker rm $(docker ps -aq) }
+##
+
+start_apache_server() 
+{
+    docker run -dit -p 8000:80 -v /root/Palast/Kioku/Admin/Docker/Setups/ApachePHP/www:/var/www/site own_apache:PHP
+}

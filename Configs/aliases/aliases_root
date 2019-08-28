@@ -7,8 +7,8 @@ if [[ $(hostname) == root ]]; then
 
 fi 
 
-dstop() { docker kill $(docker ps -q) }
-dkill() { docker rm $(docker ps -aq) }
+dkill() { docker kill $(docker ps -q) }
+drmv() { docker rm $(docker ps -aq) }
 
 
 
