@@ -1,0 +1,42 @@
+#!/bin/bash
+#Basics
+    "firefox" 
+        Alt + q
+    "nautilus"
+        Alt + n
+    "virtualbox"
+        Alt + v
+"gnome-tweaks"
+        Alt + o
+"gnome-system-monitor"
+        Alt + s
+
+
+#Terminals
+"~/Admin/Scripts/5xXbindkeys/big_right.sh"
+        Alt + d
+"~/Admin/Scripts/5xXbindkeys/big_left.sh"
+        Alt + a
+
+#Alt 0-9
+#"~/Admin/Scripts/5xXbindkeys/alt0.sh"
+#        Alt + 0
+#"~/Admin/Scripts/5xXbindkeys/alt1.sh"
+#        Alt + 1
+
+"~/Admin/slip_in_admin.sh"
+        Alt + 2
+
+"~/Hack/slip_in_hack.sh"
+        Alt + 4
+
+"~/Admin/Scripts/5xXbindkeys/alt5.sh"
+        Alt + 5
+"~/Admin/Scripts/5xXbindkeys/alt6.sh"
+        Alt + 6
+#"~/Admin/Scripts/5xXbindkeys/alt7.sh"
+#        Alt + 7
+"~/Admin/Scripts/5xXbindkeys/alt8.sh"
+        Alt + 8
+"~/Admin/Scripts/5xXbindkeys/alt9.sh"
+        Alt + 9
