@@ -36,7 +36,7 @@ HOSTNAME=$(hostname)
     alias sys="cd /etc/systemd/system/; clear; ls -l"
     alias venv="cd $VENV; clear; ls"
     alias notebook="vim $HOME/NOTEBOOK.md"
-    #TODO probably put those in a 'have_kioku.aliases file' 
+    alias voc='vim $HOME/Palast/Kioku/Vocab/NEW.txt'
     alias kioku="cd $HOME/Palast/Kioku; clear; ll"
     alias skills="cd $HOME/Palast/Kioku/Skills; ll"
     alias .ssh="cd $HOME/.ssh; ls"

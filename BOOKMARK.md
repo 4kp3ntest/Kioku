@@ -55,6 +55,7 @@ lang
     jap
     python
     java
+    c
 flora
 fauna
 tmp

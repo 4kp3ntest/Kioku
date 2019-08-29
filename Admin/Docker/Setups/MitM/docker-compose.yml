@@ -3,6 +3,10 @@ version: '3'
 services:
 
   alice:
+    build:
+      context: Alice
+      args: 
+        - IMAGE_VERSION=ubuntu:latest
     hostname: Alice
     image: own:Alice
     volumes: 
@@ -13,6 +17,10 @@ services:
     command: tail -F /dev/null
 
   bob:
+    build:
+      context: Bob 
+      args: 
+        - IMAGE_VERSION=ubuntu:latest
     hostname: Bob
     image: own:Bob
     privileged: true
@@ -21,6 +29,6 @@ services:
 
 networks:
 
-    default:
-        external:
-            name: rednet
+  default:
+    external:
+      name: rednet

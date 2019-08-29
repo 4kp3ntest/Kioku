@@ -16,3 +16,12 @@ Iptables standard chains    INPUT, OUTPUT, FORWARD
 Iptables most important matches	-s source, -d destination, -p protocol, -i in-interface, -o out-interface
 Network Address Translation/IP Masquerade   Maps multiple local IPs to one public IP
 
+28.8
+Arthritis#Entzuendliche Gelenkerkrankung
+Arthrose#Degenerativ durch Gelenkverschleiss
+Qigong#Shaolin monks, chinesische Meditations-, Konzentrations- und Bewegungsform
+Eduroam#Weltweiter Zugang zu WLANs in Forschungseinrichtungen mit einzigem Konto
+National Institute of Standards and Technology (NIST)#Provides recommendations for Crypto, US Maryland
+x86-64 Calling Convention#[rdi], [rsi], rdx, rcx, r8, r9, STACK
+DHCP Starvation Attack#Durch DHCP Anfragen mit unterschiedlichen MAC Adressen von einem Client fordert dieser alle verfuegbaren IP Adressen an
+Wireshark resolve MAC addr#/etc/ethers<br>xx:xx:xx:xx:xx:xx NAME

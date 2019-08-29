@@ -1,8 +1,7 @@
-Arthritis#Entzuendliche Gelenkerkrankung
-Arthrose#Degenerativ durch Gelenkverschleiss
-Qigong#Shaolin monks, chinesische Meditations-, Konzentrations- und Bewegungsform
-Eduroam#Weltweiter Zugang zu WLANs in Forschungseinrichtungen mit einzigem Konto
-National Institute of Standards and Technology (NIST)#Provides recommendations for Crypto, US Maryland
-x86-64 Calling Convention#[rdi], [rsi], rdx, rcx, r8, r9, STACK
-DHCP Starvation Attack#Durch DHCP Anfragen mit unterschiedlichen MAC Adressen von einem Client fordert dieser alle verfuegbaren IP Adressen an
-Wireshark resolve MAC addr#/etc/ethers<br>xx:xx:xx:xx:xx:xx NAME
+Burpsuite#Target, Proxy, Intruder
+List open ports on Linux machine#netstat tulpn
+Runtime Linker#/lib/x86_64-linux-gnu/ld-2.28.so
+C++ name mangling#Translates C++ names to C names -> makes them unique by e.g. mangling in types
+stringstream#>> Extracts formated data, << Inserts formated data, str() to get content and str(string) to write content
+Vector#{Array, that, can} change in size -> more capacity than what is strictly needed (relocating all elements is expensive)
+Simple Object Access Protocol (SOAP)#Austausch von XML formatierten Daten in Anwendungs Layer, Envelope - Header - Body
