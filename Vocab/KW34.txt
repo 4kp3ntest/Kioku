@@ -32,3 +32,29 @@ C++ name mangling#Translates C++ names to C names -> makes them unique by e.g. m
 stringstream#>> Extracts formated data, << Inserts formated data, str() to get content and str(string) to write content
 Vector#{Array, that, can} change in size -> more capacity than what is strictly needed (relocating all elements is expensive)
 Simple Object Access Protocol (SOAP)#Austausch von XML formatierten Daten in Anwendungs Layer, Envelope - Header - Body
+
+30.8
+Assembly imul instruction#Signed Integer Multiply,<br>imul edx uses eax as multiplier and returns 64 bit (EDX-high, EAX-low)<br>note: imul ecx, ecx, 1234 is equivalent to imul ecx, 1234
+pwnlib.context#Specify Architecture, endianness and word size
+YUV Farbmodell#Luminanz & Chrominanz (U und V), Komprimiert Farbtiefe nicht Darstellung -> .jpeg 
+Free Lossless Audio Codec#Audio Codec ohne Komprimierungsverlust im Kontrast zu MP3, hat open-source reference
+Standard Template Library#C++ standard functions
+ELF Section#Smallest indivisible unit that can be processed within an ELF file<br>1. Sections contain programm data (.text, .data, .bss) or link-editing information (.symtab, .strtab, .rela.text)
+ELF Segments#Collection of Sections representing smallest individual unit that can be mapped to memory by exec() or runtime linker
+http://detectportal.firefox.com#Check if captive portal is in place
+Time To Detect (TTD)#Is the time between the initial occurrence of the incident to when an analyst detects and starts working on the incident
+Time To Mitigate (TTM)#This timeline is recorded when the firewall block, DNS sinkhole, or network isolation is implemented after an incident.
+Advanced Persistent Threat (APT)#komplexe, zielgerichteter Angriff auf kritische IT-Infrastruktur
+HTTP/2#New HTTP version published in 2015, TLS 1.2 or newer required for https, allows Server to push content!
+Adversarial Tactics, Techniques & Common Knowledge (ATT&CK)# strukturierte Liste der Verhaltensweisen von Angreifern, die in Taktiken und Techniken zusammengesetzt ist<br><br>Von MITRE eingefuehrt
+Assembly flags#Control Flags (how): Direction, Interrupt, Trag<br>Status Flags: Carry, Overflow, Sign, Zero, Aux. carry, Parity ADD PIC!
+Logical Shift Instruction#the bits that slide off the end disappear (except for the last, which goes into the carry flag)<br>shr src, dest
+Arithmetic Shift Instruction#bits slide of but spaces are filled in such a way that sign of number is preserved
+
+1.9
+Namaste#The spirit within me honors the spirit within you
+Magnesium#Zellstoffwechsel in Knochen und Muskulatur, empfohlene Tagesdosis 400 mg
+Aspartam E-951#Chemischer Süßstoff etwa 200 süßer als Zucker
+Magnet Resonance Imaging (MRI)#Strong magnetic field aligns Protons (&electrons?) in body, Radio frequency pulls them out of their alignment, Protons snap back if RF stops, this back snap can be monitored.
+EAPOL#Extensible Authentication Protocol(EAP) over LAN. A simple 4-way handshake is shown pictorially below
+Message Integrity Code (MIC)#Synonym to Message Authentification Code (MAC), uses keys to append signature to message
