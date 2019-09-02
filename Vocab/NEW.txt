@@ -1,0 +1,16 @@
+Wasserelektrolyse#Redoxreaktion zur Gewinnung von Wasserstoff und Sauerstoff
+Deuterium#Schwerer Wasserstoff, Neutron im Kern, Konzentration etwa 0,0115 Prozent
+PowerShell#In every Windows System since 2009
+Windows Antimalware Scan Interface (AMSI)#to detect malicious instances of PowerShell
+Windows Application#1. Console Application -> opens console window if parent does not have one and links STDIN, STDOUT & STDERR to it (CScript)<br>2. Windows Application (WScript)
+Component Object Model (COM)#Interproyesskommunikation unter Windows
+Windows Script Host (WSH)#COM-basierte Laufzeitumgebung fuer Skriptsprachen, verwendet Engines die sich auch in e.g. Browser einbinden lassen
+Endpoint Detection and Response (EDR)#Continous Monitoring against APT
+Endpoint Protection Platforms (EPP)#Focus is to stop threats in pre-execution phase, Antivirus, Antimalware
+regsvr32.exe#Adds DLLs and ActiveX-Steuerelemente to Registry<br>Can be used to execute payloads without calling wscript.exe or cscript.exe<br>Mitigation grows though
+Dynamisches DNS (DDNS)#Technik um Domains im Domain Name System dynamisch zu aktualisieren
+virtual Dynamic Shared Object (dSVO)#Linux Kernel mechanism<br>Exports a set of kernel space routines to memory area in user space<br><br>vsyscall
+Convert double-word to quad-word (CDQ)#Sign-extends EAX into EDX, forming the quad-word EDX:EAX
+Messenger Briar#Peer-to-peer
+Firechat#Mesh-App<br> Geräte, auf denen das Programm installiert ist, stellen dafür via Bluetooth, WLAN oder Multipeer Connectivity von Apple ein dezentrales Netzwerk her, über das Nachrichten übermittelt werden.
+Uiguren#Muslimische Chinesen in der Region Xinjiang, die massiv unterdrueckt werden

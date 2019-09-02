@@ -5,7 +5,6 @@ https://github.com/Hack-with-Github/Awesome-Hacking
 https://i.blackhat.com/us-18/Thu-August-9/us-18-McGrew-An-Attacker-Looks-At-Docker-Approaching-Multi-Container-Applications-wp.pdf
 
 TODO - defined/useful docker setups (Apache Server, Scapy, DVA) callable with aliases
-TODO - Check vimrc use of real tabs in specific folder
 TODO - execute script on shutdown DOES NOT WORK
        service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
        script in /bin/clean_home
