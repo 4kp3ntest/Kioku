@@ -1,8 +1,9 @@
-openHAB#Open Source Framework to connect a diversity of IoT devices
-Open Authorization - OAuth#Erlaubt sichere API-Authorisierung fuer Desktop-, Web- und Mobile-Anwendungen<br>Resource Owner: kann Dritten Zugriff auf Ressourcen gewaehren<br>Resource Server: Server auf dem Ressourcen liegen<br>Client: Anwendung (Relying Party) die auf Ressourcen zugreifen will<br>Authorization Server: authentifiziert den Resource Owner und stellt Access-Tokens fuer erlaubte Freigaben aus,https://de.wikipedia.org/wiki/OAuth#/media/Datei:Protocol-Flow.png
-OpenID Connect#Combines identity and API authorization (in one simple request)<br>Based on OAuth 2.0
-Apache Spark#Unified Analytics Engine for Big Data
-Domain Specific Language#Anwendungsspezifische Sprache für ein bestimmtes Problemfeld (die sogenannte Domäne) entworfen und implementiert
-PSYC#fastest text-based protocol
-Extensible Messaging and Presence Protocol (XMPP)#Basiert auf XML und ermoeglicht Austausch von Daten. Netz-Architektur aehnlich SMTP, kann auch Peer-to-Peer Sitzungen vereinbaren
-Simple Mail Transfer Protocol (SMTP)#Zum Austausch von E-Mails, vorrangig Einspeisen und Weiterleiten (POP3 oder IMAP zum Abholen)
+Debian Releases#Squeeze (6.0) < Wheezy < Jessie < Stretch < Buster (10)
+docker commit#Save state of container as image!!<br>docker commit 8e07a84ea97a durdn/java7
+docker save/load#Save docker image as tar file and load it at another host  
+Apache Commons Daemon#Jsvc is a set of libraries and applications for making Java applications run on UNIX more easily. 
+Web Ontology Language (kurz OWL)#Eine Spezifikation des World Wide Web Consortiums (W3C), um Ontologien anhand einer formalen Beschreibungssprache zu erstellen
+OWLAPI#Java API for creating, manipulating and serialising OWL Ontologies.
+Hermit#Reasoner
+Protégé#Editor zur Modellierung von Ontologien
+Mark Twain#Samuel Langhorne Clemens, amerikanischer Schriftsteller<br>Tom Sawyer and Huckleberry Finn

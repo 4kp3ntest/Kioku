@@ -45,4 +45,14 @@ JSON for Linking Data#lightweight Linked Data format<br>Used by Scouts to descri
 Metal Organic Framework (MOF)#Mikroporoese Gerueste/Materialen aus anorganischen Stoffen mit organischen Molekuehlen als Verbindungselemente
 Spark Framework#Open Source Web-App Framework in Java, Web page runs in JVM not @ e.g. Apache2 
 XBee#Xbee can do anything that ZigBee can do but it also includes other protocol stacks in the same form factor and host interface
+
+05.9.19
 ZigBee Light Link#Global standard for interoperable consumer lighting and control products
+openHAB#Open Source Framework to connect a diversity of IoT devices
+Open Authorization - OAuth#Erlaubt sichere API-Authorisierung fuer Desktop-, Web- und Mobile-Anwendungen<br>Resource Owner: kann Dritten Zugriff auf Ressourcen gewaehren<br>Resource Server: Server auf dem Ressourcen liegen<br>Client: Anwendung (Relying Party) die auf Ressourcen zugreifen will<br>Authorization Server: authentifiziert den Resource Owner und stellt Access-Tokens fuer erlaubte Freigaben aus,https://de.wikipedia.org/wiki/OAuth#/media/Datei:Protocol-Flow.png
+OpenID Connect#Combines identity and API authorization (in one simple request)<br>Based on OAuth 2.0
+Apache Spark#Unified Analytics Engine for Big Data
+Domain Specific Language#Anwendungsspezifische Sprache für ein bestimmtes Problemfeld (die sogenannte Domäne) entworfen und implementiert
+PSYC#fastest text-based protocol
+Extensible Messaging and Presence Protocol (XMPP)#Basiert auf XML und ermoeglicht Austausch von Daten. Netz-Architektur aehnlich SMTP, kann auch Peer-to-Peer Sitzungen vereinbaren
+Simple Mail Transfer Protocol (SMTP)#Zum Austausch von E-Mails, vorrangig Einspeisen und Weiterleiten (POP3 oder IMAP zum Abholen)
