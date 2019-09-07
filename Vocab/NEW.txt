@@ -1,5 +1,5 @@
 openHAB#Open Source Framework to connect a diversity of IoT devices
-Open Authorization - OAuth#Erlaubt sichere API-Authorisierung fuer Desktop-, Web- und Mobile-Anwendungen<br>Resource Owner: kann Dritten Zugriff auf Ressourcen gewaehren<br>Resource Server: Server auf dem Ressourcen liegen<br>Client: Anwendung (Relying Party) die auf Ressourcen zugreifen will<br>Authorization Server: authentifiziert den Resource Owner und stellt Access-Tokens fuer erlaubte Freigaben aus,https://de.wikipedia.org/wiki/OAuth#/media/Datei:Protocol-Flow.png
+Open Authorization - OAuth#Erlaubt sichere API-Authorisierung fuer Desktop-, Web- und Mobile-Anwendungen<br>Resource Owner: kann Dritten Zugriff auf Ressourcen gewaehren<br>Resource Server: Server auf dem Ressourcen liegen<br>Client: Anwendung (Relying Party) die auf Ressourcen zugreifen will<br>Authorization Server: authentifiziert den Resource Owner und stellt Access-Tokens fuer erlaubte Freigaben aus,
 OpenID Connect#Combines identity and API authorization (in one simple request)<br>Based on OAuth 2.0
 Apache Spark#Unified Analytics Engine for Big Data
 Domain Specific Language#Anwendungsspezifische Sprache für ein bestimmtes Problemfeld (die sogenannte Domäne) entworfen und implementiert

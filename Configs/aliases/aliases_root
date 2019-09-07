@@ -11,7 +11,6 @@ dkill() { docker kill $(docker ps -q) }
 drmv() { docker rm $(docker ps -aq) }
 
 
-
 anki_sync_server_start() {
 
     docker run -dit \
