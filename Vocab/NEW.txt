@@ -1,9 +1,7 @@
-Debian Releases#Squeeze (6.0) < Wheezy < Jessie < Stretch < Buster (10)
-docker commit#Save state of container as image!!<br>docker commit 8e07a84ea97a durdn/java7
-docker save/load#Save docker image as tar file and load it at another host  
-Apache Commons Daemon#Jsvc is a set of libraries and applications for making Java applications run on UNIX more easily. 
-Web Ontology Language (kurz OWL)#Eine Spezifikation des World Wide Web Consortiums (W3C), um Ontologien anhand einer formalen Beschreibungssprache zu erstellen
-OWLAPI#Java API for creating, manipulating and serialising OWL Ontologies.
-Hermit#Reasoner
-Protégé#Editor zur Modellierung von Ontologien
-Mark Twain#Samuel Langhorne Clemens, amerikanischer Schriftsteller<br>Tom Sawyer and Huckleberry Finn
+PostgreSQL#Open Source Relational Database
+RDBMSs#Relational Database Management System
+Data Source Name (DSN)#Beschreibt Zugangsdaten die ein Treiber benötigt, um eine Verbindung zu einer bestimmten Datenbank auf Basis eines spezifischen RDBMSs herzustellen
+Wear leveling#Steigert Langlebigkeit von Speichermedien -> usage of blocks evenly distributed<br>Alte FS bad!!
+EEPROM#electrically erasable programmable read-only memory and is a type of non-volatile memory<br>Can be designed appropriate to requirements<br>Cycles ~ 3000 up to 1 Mio
+Constrained Application Protocol (CoAP)#Enables constrained devices to communicate with the wider Internet using similar protocols als eine Art Translator
+Philips#Haushaltsgeraete und Lichttechnik mit Hauptsitz in Amsterdam
