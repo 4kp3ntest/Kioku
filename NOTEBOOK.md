@@ -6,6 +6,9 @@ https://gitlab.com/cybears/fall-of-cybeartron/tree/master
 ## Attack on Docker Setup
 https://i.blackhat.com/us-18/Thu-August-9/us-18-McGrew-An-Attacker-Looks-At-Docker-Approaching-Multi-Container-Applications-wp.pdf
 
+TODO - Clean up the repo!!!
+
+TODO - Add the Assokoto script to Polyglot/Python and summarize modules key concepts
 TODO - defined/useful docker setups (Apache Server, Scapy, DVA) callable with aliases
 TODO - execute script on shutdown DOES NOT WORK
        service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
@@ -14,15 +17,10 @@ TODO - execute script on shutdown DOES NOT WORK
 TODO - Lucy: save current pixel configuration -> dedicated function to restore
 TODO - Python: relevant stuff make a Notebook rather than a .md file (Python.md)
 TODO - Docker: declutter and extend Dockerfiles folder
-TODO - Docker: evaluate Setups and discard flask-redis
 TODO - Tridactyl: Add config to Kioku
 TODO - Hack: writedown of the first three Boxes: brainpan, fristileaks & HackInOS
-TODO - Kelevra: create own AP if no netctl profile available
-TODO - do-nothing script https://jamielinux.com/docs/openssl-certificate-authority/introduction.html
-TODO - Clean and add a working zshrc to Kioku
 TODO - Python: add Ipython profiles to Kioku
         - Hack (abgespeckte Version von kalis module set)
-TODO - System: when connected to VPN, local network not working (add iptables (?) )
 TODO - System: set random MAC on boot
 TODO - System: Externe Festplatte ausmisten
 TODO - System: System Backup machen
