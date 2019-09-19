@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  DVWA:
+    hostname: DVWA-Server 
+    image: vulnerables/web-dvwa
+    ports: 8000:80
+    privileged: true
+    command: tail -F /dev/null
+

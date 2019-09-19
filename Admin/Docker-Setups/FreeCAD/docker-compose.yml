@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  freeCAD:
+    hostname: freeCAD
+    image: freecad
+    volumes: 
+        - $HOME/.Xauthority:/root/.Xauthority:rw 
+        - $HOME/Maker/freeCAD/:/root:rw
+    environment:
+        - DISPLAY
+    privileged: true
+    command: tail -F /dev/null
+
