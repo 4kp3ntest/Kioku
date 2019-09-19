@@ -11,4 +11,4 @@ ps -u "$(id -u)" -o pid -o command | while read -r pid args; do
     fi
 done
 
-$ADMIN/Scripts/3xGnome/c_back.sh favs/badass_tux.jpg
+$ADMIN/Scripts/Gnome/c_back.sh favs/badass_tux.jpg
