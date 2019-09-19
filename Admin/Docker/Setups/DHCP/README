@@ -1,0 +1,5 @@
+17.09.19
+
+Minimalistic Docker setup with only a DHCP server based on ubuntu:latest
+DHCP server fails to start though 
+Starting it in the running container works

@@ -1,8 +1,0 @@
-openHAB#Open Source Framework to connect a diversity of IoT devices
-Open Authorization - OAuth#Erlaubt sichere API-Authorisierung fuer Desktop-, Web- und Mobile-Anwendungen<br>Resource Owner: kann Dritten Zugriff auf Ressourcen gewaehren<br>Resource Server: Server auf dem Ressourcen liegen<br>Client: Anwendung (Relying Party) die auf Ressourcen zugreifen will<br>Authorization Server: authentifiziert den Resource Owner und stellt Access-Tokens fuer erlaubte Freigaben aus,
-OpenID Connect#Combines identity and API authorization (in one simple request)<br>Based on OAuth 2.0
-Apache Spark#Unified Analytics Engine for Big Data
-Domain Specific Language#Anwendungsspezifische Sprache für ein bestimmtes Problemfeld (die sogenannte Domäne) entworfen und implementiert
-PSYC#fastest text-based protocol
-Extensible Messaging and Presence Protocol (XMPP)#Basiert auf XML und ermoeglicht Austausch von Daten. Netz-Architektur aehnlich SMTP, kann auch Peer-to-Peer Sitzungen vereinbaren
-Simple Mail Transfer Protocol (SMTP)#Zum Austausch von E-Mails, vorrangig Einspeisen und Weiterleiten (POP3 oder IMAP zum Abholen)

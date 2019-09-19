@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  DHCP_Server:
+    build:
+      context: ./DHCP_Server 
+      args: 
+        - IMAGE_VERSION=ubuntu:latest
+    hostname: DHCP_Server 
+    image: own:DHCP_Server
+    volumes: 
+        - ./conf/dhcp.conf:/etc/dhcp/dhcpd.conf
+    privileged: true
+    command: service isc-dhcp-server start && tail -F /dev/null ## 
+
+
+networks:
+
+  default:
+    external:
+      name: rednet

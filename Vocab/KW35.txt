@@ -1,48 +1,7 @@
-2.9.19
-Wasserelektrolyse#Redoxreaktion zur Gewinnung von Wasserstoff und Sauerstoff
-Deuterium#Schwerer Wasserstoff, Neutron im Kern, Konzentration etwa 0,0115 Prozent
-PowerShell#In every Windows System since 2009
-Windows Antimalware Scan Interface (AMSI)#to detect malicious instances of PowerShell
-Windows Application#1. Console Application -> opens console window if parent does not have one and links STDIN, STDOUT & STDERR to it (CScript)<br>2. Windows Application (WScript)
-Component Object Model (COM)#Interproyesskommunikation unter Windows
-Windows Script Host (WSH)#COM-basierte Laufzeitumgebung fuer Skriptsprachen, verwendet Engines die sich auch in e.g. Browser einbinden lassen
-Endpoint Detection and Response (EDR)#Continous Monitoring against APT
-Endpoint Protection Platforms (EPP)#Focus is to stop threats in pre-execution phase, Antivirus, Antimalware
-regsvr32.exe#Adds DLLs and ActiveX-Steuerelemente to Registry<br>Can be used to execute payloads without calling wscript.exe or cscript.exe<br>Mitigation grows though
-Dynamisches DNS (DDNS)#Technik um Domains im Domain Name System dynamisch zu aktualisieren
-virtual Dynamic Shared Object (dSVO)#Linux Kernel mechanism<br>Exports a set of kernel space routines to memory area in user space<br><br>vsyscall
-Convert double-word to quad-word (CDQ)#Sign-extends EAX into EDX, forming the quad-word EDX:EAX
-Messenger Briar#Peer-to-peer
-Firechat#Mesh-App<br> Geräte, auf denen das Programm installiert ist, stellen dafür via Bluetooth, WLAN oder Multipeer Connectivity von Apple ein dezentrales Netzwerk her, über das Nachrichten übermittelt werden.
-Uiguren#Muslimische Chinesen in der Region Xinjiang, die massiv unterdrueckt werden
-
-04.9.19
-OverlayFS#Kernel Driver to implement a Union Mount Filesystem for Linux<br>Mainline since 3.18 (2014)<br>Additions in Kernel 4.0 required vor docker driver overlay2
-Docker overlay2 driver#Union mounts the adjacent layers togeter<br>Up to 128 lower layers
-XFS Dateisystem#Bestandteil Kernel seit Version 2.6, bietet Zugriffskontrollen und Quotas
-Disk Quota#Begrenzung von Speicherplatz auf Speichermedien fuer einzelne Benutzer<br>Von Quota = Anteil, Kontingent
-Optogenetics#The use of light to control cells with light-sensitive Proteins
-Dynamic Host Configuration Protocl#Dynamically assigns IP addresses and network configuration parameters to Clients<br>Layer 5 over UDP port 67 (server) & 68 (client)
-HTTPU/HTTPMU#HTTP over UDP (Unicast & Multicast)<br>Used in UPnP for device search requests/advertisements and responses
-Supersonic Combustion Ramjet#Raketen die Geschwindigkeiten von mehr als Mach 5 erreichen: Luft dringt ein, wird komprimiert, Treibstoff eingepritzt und entflammt und erzeugt Schub
-Defense Advanced Research Projects Agency (DARPA)#Behoerde Verteidigungsministerium US, Budget ~3 Billion, Gegenmassnahme auf Sputnik-Schock 1957
-Simultaneous Authentication of Equals (SAE)#Secure password-based authentication and password-authenticated key agreement<br>Variant of Dragon Key Exchange<br>DH using elliptic curve (or primary cyclic group)
-Global SSH access to Nier#1. Configure a port forwarding rule @FritzBox!<br>2.Generate key material & send public key to andreas.kellerer@comlet.de<br>Reactivate skllrn@dyn.dns
-Z-Wave#IoT protocol using shared network key- 2001 Denmark<br>850 - 950 MHz, min 40m in buildings<br>4 Byte Home ID + 1 Byte Node ID<br>Zweiwege-Kommunikation mit Rueckbestaetigung<br>Mesh with max. 4 hops
-Z-Shave#Downgrade attack on Z-Wave from S2 to S0
-Smart Metering#Messen und intelligentes Regulieren des Energieverbrauchs
-InfluxDB#Open source Time Series Database (TSDB) written in Go
-Ontologie#Beschreibt die Grundstrukturen der Wirklichkeit<br>In tech context: Wissen über bestimmte Domänen und ihre Beziehungen zueinander<br>besteht aus classes, properties and individuals/instances.
-ZigBee#Wireless IoT protocol @2.4GHz based on IEEE 802.15.4, Version 3.0 from Dec 2016
-IEEE 802.15.4#Physical & Link Layer Specification for WPAN, used by ZigBee
-Open Central Control Unit SDK (OCCU)#Software Framework to set up smart GW on embedded device like a Raspi
-Gradle#Build-Management-Automatisierungs-Tool mit dem Besten aus Apache-Ant & Apache-Maven, for Java (with Plugins also Grovy, Scala and C++)
-Reasoner - Smart Home#Entscheidet ob die vorhandenen (im Vorfeld oder durch Algorithmus definierten) Regeln mit vorhandenen Geraeten umsetzbar ist
-Euler Yet another proof Engine (EYE)#Reasoning Engine supporting the Semantic Web layers
-Semantic Web#Expands Web with an additional layer of correlations between data points (https://www.w3.org/DesignIssues/diagrams/sweb-stack/2006a)
-Resource Description Framework (RDF)#Datenmodel zur Formulierung logischer Aussagen über beliebige Dinge<br>Jede Aussage Triplet Subjekt-Praedikat-Object
-JSON for Linking Data#lightweight Linked Data format<br>Used by Scouts to describe a known thing
-Metal Organic Framework (MOF)#Mikroporoese Gerueste/Materialen aus anorganischen Stoffen mit organischen Molekuehlen als Verbindungselemente
-Spark Framework#Open Source Web-App Framework in Java, Web page runs in JVM not @ e.g. Apache2 
-XBee#Xbee can do anything that ZigBee can do but it also includes other protocol stacks in the same form factor and host interface
-ZigBee Light Link#Global standard for interoperable consumer lighting and control products
+PostgreSQL#Open Source Relational Database
+RDBMSs#Relational Database Management System
+Data Source Name (DSN)#Beschreibt Zugangsdaten die ein Treiber benötigt, um eine Verbindung zu einer bestimmten Datenbank auf Basis eines spezifischen RDBMSs herzustellen
+Wear leveling#Steigert Langlebigkeit von Speichermedien -> usage of blocks evenly distributed<br>Alte FS bad!!
+EEPROM#electrically erasable programmable read-only memory and is a type of non-volatile memory<br>Can be designed appropriate to requirements<br>Cycles ~ 3000 up to 1 Mio
+Constrained Application Protocol (CoAP)#Enables constrained devices to communicate with the wider Internet using similar protocols als eine Art Translator
+Philips#Haushaltsgeraete und Lichttechnik mit Hauptsitz in Amsterdam
