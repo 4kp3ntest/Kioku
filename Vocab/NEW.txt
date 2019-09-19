@@ -1,0 +1,5 @@
+VBox - mount shared folder#mount -t vboxsf Shared ~/host
+Bash - diff checksum#diff <(md5sum some_file.txt) <(echo 7393checksum#937)
+Inlineframe#HTML Element<br>
+Iframe Injection#
+
