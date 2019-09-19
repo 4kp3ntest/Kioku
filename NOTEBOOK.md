@@ -2,41 +2,25 @@
 https://github.com/Hack-with-Github/Awesome-Hacking
 ##Nice CTF Repo
 https://gitlab.com/cybears/fall-of-cybeartron/tree/master
-
 ## Attack on Docker Setup
 https://i.blackhat.com/us-18/Thu-August-9/us-18-McGrew-An-Attacker-Looks-At-Docker-Approaching-Multi-Container-Applications-wp.pdf
 
-TODO - Clean up the repo!!!
 
-TODO - Add the Assokoto script to Polyglot/Python and summarize modules key concepts
-TODO - defined/useful docker setups (Apache Server, Scapy, DVA) callable with aliases
-TODO - execute script on shutdown DOES NOT WORK
-       service in /usr/lib/systemd/system-shutdown/clean_gnome_home.shutdown
-       script in /bin/clean_home
-       should remove: .gdb_history, .python_history, .motto_aliases!
+#ToDo's
 TODO - Lucy: save current pixel configuration -> dedicated function to restore
-TODO - Python: relevant stuff make a Notebook rather than a .md file (Python.md)
-TODO - Docker: declutter and extend Dockerfiles folder
 TODO - Tridactyl: Add config to Kioku
 TODO - Hack: writedown of the first three Boxes: brainpan, fristileaks & HackInOS
-TODO - Python: add Ipython profiles to Kioku
-        - Hack (abgespeckte Version von kalis module set)
-TODO - System: set random MAC on boot
 TODO - System: Externe Festplatte ausmisten
 TODO - System: System Backup machen
 
-# NOTES
-## New Tools
-ranger
 
+# NOTES
 ## PHP
 Content of GET & POST in dedicated variables
 Was not able to make PHP reverse shell oneliner work - nc stops but no sign of traffic in wireshark
-
 ## Python 
 Awesome new JupyterLap extends old notebook
 Need to define some shortcuts to make it useful (already blacklistadd url)
-
 
 # UpTo's
 ### Hacking the Art of Exploitation: prepare booksrc as C reference
@@ -47,7 +31,6 @@ http://www.grymoire.com/Unix/Sed.html#uh-4a
 https://www.karlrupp.net/en/computer/nat_tutorial
 ### Next Step is to have some sort of firewall
 https://wiki.archlinux.org/index.php/simple_stateful_firewall
-
 
 ## Evaluate WordPress
 https://github.com/sammanthp007/WordPress-Pentesting-Setup
