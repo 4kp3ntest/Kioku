@@ -1,0 +1,14 @@
+VBox - mount shared folder#mount -t vboxsf Shared ~/host
+Bash - diff checksum#diff <(md5sum some_file.txt) <(echo 7393checksum937)
+Inlineframe#HTML Element<br>
+Iframe Injection#XSS Variant
+dnscat2#C2 communication via DNS
+Types of IDS#Network based for passive sniffing<br>Endpoint based: file integrity, rootkit & registry checks
+Security Operations Center (SOC)#Pentesters Gegenspieler<br>First line SOC analysts<br>Second line SOC analysts<br>Third line SOC analyst
+RCPT TO command#Email Anfrage if address exists
+Virustotal#Onlinedienst zur Überprüfung von Dateien auf bekannte Viren Signaturen
+AlienVault USM#Antiviren System
+Metasploit#Exploit Toolkit
+Metasploit Listener#Offener Port zu dem sich Metasploit Exploit verbindet<br><br>Have one running on some Raspi!
+Hard Disk Firewall (HDF)#Stops unauthorized processes from writting to disk
+Riesterrente hinterfragen & ggfs. kündigen!!#Die steuerlichen Vorteile die ich beim Einzahlen habe werden mir beim Auszahlen wieder eins zu eins abgezogen?!<br>Außer ich verwende das Geld um eine Immobilie zu kaufen oder den Kredit dafür zu tilgen - Ehrlich gesagt will ich nicht erst mit (frühestens 60) eine Imobilie kaufen ...

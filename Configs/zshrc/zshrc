@@ -116,7 +116,7 @@ if [ -f ~/.motto_aliases ]; then
      source ~/.motto_aliases
 fi
 # 
-trap 'source /home/gnome/.motto_aliases' USR1
+trap 'source $HOME/.motto_aliases' USR1
 
 # Use Vim keybinds in shell
 #bindkey -v

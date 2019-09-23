@@ -9,6 +9,7 @@ nmap -sV 192.168.1.100
 
 ## TESTOUT
 nmap -v -sS -A -T4 target
+nmap -PN -sA -vv -n -p1-1000 -T4 -oNmapACKScan.txt 117.X.X.X
 
 # UDP scan
 nmap -sU TARGET

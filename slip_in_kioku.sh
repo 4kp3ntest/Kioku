@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Symlink to new specific aliases
-ln -fs $ADMIN/Admin_aliases.txt $HOME/.motto_aliases
+ln -fs $HOME/Palast/Kioku/Configs/aliases/Kioku_aliases.txt $HOME/.motto_aliases
 
 # Send Signal to all zsh shells to source additional aliases
 ps -u "$(id -u)" -o pid -o command | while read -r pid args; do
@@ -10,4 +10,4 @@ ps -u "$(id -u)" -o pid -o command | while read -r pid args; do
     fi
 done
 
-$ADMIN/Scripts/Gnome/c_back.sh favs/badass_tux.jpg
+$ADMIN/Scripts/Gnome/c_back.sh favs/faze

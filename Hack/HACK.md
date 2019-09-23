@@ -1,5 +1,4 @@
 
-nmap -PN -sA -vv -n -p1-1000 -T4 -oNmapACKScan.txt 117.X.X.X
 
 ## WIFI with aireplay
 airmon-ng start $iface # monitor mode
