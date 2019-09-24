@@ -1,0 +1,8 @@
+Gebuehrenunterschiede Weltpostverein#Sonderregelung urspruenglich um armen Laendern zu helfen -> Sendungen aus Europa (anstatt China) kosten das Zwei- bis Dreifache!
+Ultra-Wideband-Technik als Keyless-Go Ersatz#NXP und Volkswagen<br>Vermindert (unterbindet?) Risiko einer Funk-Relay Attacke durch sehr genaue Standortbestimmung in Kombination mit Distanzbestimmung
+ebtables#iptables equivalent for Ethernet
+PKCS#Public-Key Cryptography Standards<br>Beinhaltet alle Spezifikationen fuer Pub-Key Krypto with DH, RSA oder ECC
+Hotspots in photovoltaic#occur when one or more cells in a series-connected string of cells are underperforming (e.g. shaded by leaves or dirt).<br>Shaded cell becomes the current limiting element (-> reverse-biasing)<br>This essentially dumps all the power from the good cells into the bad cells, heating them up to possibly the point of failure due to melted solder joints, cracked silicon, and, as appears to be the case with the Walmart fires, ignition of the materials used to encapsulate the cells
+Composer#PHP package installer
+Manage Debian repositories#/etc/apt/sources.list
+PHP most recent version#PHP7.3
