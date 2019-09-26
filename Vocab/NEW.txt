@@ -11,3 +11,5 @@ CSRF | XSRF#Cross-Site-Request-Forgery<br>HTTP ist statuslos -> Unterschieben ei
 Vagrant#Freie Ruby-Anwendung zum Erstellen und Verwalten von virtuellen Maschinen
 RHEL#Red Hat Enterprise Linux<br>Kann nur im Zusammenhang mit Lizenzvertraegen erworben werden
 CentOS#Community Enterprise Operating System<br>Binaerkombatibles open source OS zu RHEL
+REST#Representational state transfer<br><br>Einheitliche & statuslose Aufrufe<br>->Interoperabilitaet zwischen Web Services 
+Front Controller#collective term for the routes that your web application defines for its various endpoints
