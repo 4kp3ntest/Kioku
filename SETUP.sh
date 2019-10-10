@@ -70,8 +70,7 @@ fi
 echo '[ZSH] Do you want to clone Oh-my-ZSH? (y/n)'
 if [[ $choice == 'y' ]]; then
     echo '\tCloning Oh-my-ZSH'
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/\
-        oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 else
     echo '\tDid nothing...'
 fi
