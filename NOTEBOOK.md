@@ -7,7 +7,7 @@ https://i.blackhat.com/us-18/Thu-August-9/us-18-McGrew-An-Attacker-Looks-At-Dock
 
 
 #ToDo's
-TODO - Evaluate Email client to k-9 (probably req to compile from source)
+TODO - Evaluate Email clients k-9, FairEmail
 TODO - Spin up Email Server @Nier
 TODO - Split the monstrously grwoing 'Hack' folder into additional 'Programming' deck
 TODO - Add Java/C++ keywords to Vocabulary

@@ -13,3 +13,6 @@ RHEL#Red Hat Enterprise Linux<br>Kann nur im Zusammenhang mit Lizenzvertraegen e
 CentOS#Community Enterprise Operating System<br>Binaerkombatibles open source OS zu RHEL
 REST#Representational state transfer<br><br>Einheitliche & statuslose Aufrufe<br>->Interoperabilitaet zwischen Web Services 
 Front Controller#collective term for the routes that your web application defines for its various endpoints
+
+
+Windows hosts file location#C:\Windows\System32\drivers\etc\hosts

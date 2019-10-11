@@ -23,7 +23,7 @@ c.NotebookApp.ip = '0.0.0.0' # listen on all IPs
 # Venv
 python -m venv testerix
 ### python2.7
-virtualenv -p / usr / bin / python2 .7 -- clear venv_Host
+virtualenv -p /usr/bin/python2.7 --clear venv_Host
 source /venv/bin/activate
 ##create kernel for jupyter (venv needs to be active!)
 pip install ipykernel

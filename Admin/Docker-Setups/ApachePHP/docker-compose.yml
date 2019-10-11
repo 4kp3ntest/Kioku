@@ -1,2 +1,17 @@
-#TODO
-docker run -dit -p 8000:80 -v $PWD/www:/var/www/site own_apache:PHP
+#docker run -dit -p 8000:80 -v $PWD/www:/var/www/site own_apache:PHP
+
+version: '3'
+
+services:
+
+  server:
+    hostname: ApachePHP-Server
+    build: 
+      context: ApachePHP/
+    image: own/apache:PHP7.2
+    volumes: 
+      - ./www:/var/www/site
+    privileged: true
+    ports: 
+      - "8000:80"
+    command: tail -F /dev/null

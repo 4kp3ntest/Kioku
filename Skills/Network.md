@@ -25,6 +25,9 @@ macchanger -r device
 ### change name of interface
 ip link set name my_interface dev eth0
 
+### delete interface
+ip link delete
+
 # connect to wifi and enable autostart
 wifi-menu
 pacman -S wpa_actiond avahi
