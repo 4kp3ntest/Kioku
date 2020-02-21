@@ -1,3 +1,10 @@
+Life is Great!
+
+Test my setup script on kali box
+1. Update & Upload Repo
+
+
+
 # MOTHERS OF ALL
 https://github.com/Hack-with-Github/Awesome-Hacking
 ##Nice CTF Repo
@@ -7,15 +14,9 @@ https://i.blackhat.com/us-18/Thu-August-9/us-18-McGrew-An-Attacker-Looks-At-Dock
 
 
 #ToDo's
-TODO - Evaluate Email clients k-9, FairEmail
-TODO - Spin up Email Server @Nier
-TODO - Split the monstrously grwoing 'Hack' folder into additional 'Programming' deck
-TODO - Add Java/C++ keywords to Vocabulary
-TODO - Lucy: save current pixel configuration -> dedicated function to restore
-TODO - Tridactyl: Add config to Kioku
-TODO - Hack: writedown of the first three Boxes: brainpan, fristileaks & HackInOS
-TODO - System: Externe Festplatte ausmisten
-TODO - System: System Backup machen
+Evaluate Email clients k-9, FairEmail
+Vim: add hyperlink functionality https://www.vim.org/scripts/script.php?script_id=861
+Tridactyl: Add config to Kioku
 
 
 # NOTES

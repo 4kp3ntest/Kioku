@@ -3,8 +3,7 @@ fncs=$( cat $0 | grep -e '^[a-z]\{2,7\}()' |cut -d' ' -f 1 )
 a() { clear; cd $ADMIN; screenfetch 2>/dev/null; ls -l; echo; echo $fncs; echo }
 s() { clear; cd $ADMIN; ls -l; echo; echo $fncs; echo }
 admin() { cd $ADMIN; ls }
-dock() { cd $ADMIN/Docker; ls }
-setups() { cd $ADMIN/Docker-Setups; ls }
+dock() { cd $ADMIN/Docker-Setups; ls }
 scripts() { cd $ADMIN/Scripts; ls }
 web() { cd $ADMIN/Web; ls }
 anki() { cd $ADMIN/Anki; ls }

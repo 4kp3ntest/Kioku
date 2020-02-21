@@ -122,7 +122,7 @@ def main():
 
     """
     gesten, bilder = load_pictures(FOLDER)
-    if debug = True:
+    if debug == True:
         print(gesten, bilder)
         print(len(gesten))
         print(len(bilder))

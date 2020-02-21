@@ -34,10 +34,17 @@ pacman -S wpa_actiond avahi
 systemctl enable netctl-auto@wlan0.service
 systemctl enable avahi-daemon
 
+# Set up new headless system to connect to wifi
 ## wpa_supplicant.conf
 network={
                ssid="home"
                priority=1 # higher wins, default is 0
                psk="very secret passphrase"
           }
-wpa_cli select_network 1
+
+# DO NOT FORGET TO ADD HOOK TO /etc/network/interfaces
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+[wpa_cli select_network 1]

@@ -26,11 +26,11 @@ HOSTNAME=$(hostname)
 # Functions
     alias killxbinds="ps aux |grep xbindkeys |tr -s ' ' | cut -d ' ' -f 2 |xargs kill"
     alias list_users="getent passwd |grep /bin/bash |cut -d ':' -f 1"
-    alias scan="nmap -sP 192.168.2.1/24"
+    alias scan="nmap -sP -T4 192.168.178.1/24"
     alias xclip="xclip -selection c"
     alias cal='echo -e "import calendar\nprint(calendar.TextCalendar().formatyear(2019))" |python'
 # FAST ACCESS
-#   alias r="cd; clear; ls; ls -l"
+#   alias s="cd; clear; ./.index; ls; ls -l"
     alias p="cd $PALAST; clear; ls"
     alias .ipy="cd $HOME/.ipython/; ll"
     alias sys="cd /etc/systemd/system/; clear; ls -l"
