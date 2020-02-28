@@ -2,6 +2,7 @@ Life is Great!
 
 Test my setup script on kali box
 1. Update & Upload Repo
+2. YouCompleteMe makes problems & also zsh shell
 
 
 

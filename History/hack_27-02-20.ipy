@@ -1,0 +1,49 @@
+# coding: utf-8
+from bs4 import BeautifulSoup
+import requests as r
+import random
+import os
+
+"""
+new: requests
+new: bs4
+
+"""
+
+url = 'http://localhost:8000'
+url1 = url+'/index.php'
+token = '123456789012345678901234567890FF'
+wrong_data = 'username=bob&password=password&Login=Login&usertoken={}'.format(token)
+data = 'username=admin&password=password&Login=Login&usertoken={}'.format(token)
+cookie = 'd143t00ma2ia285ie597a4qbs1'
+
+r.post(url=url, data=data)
+a = r.post(url=url, data=data)
+
+trace = rdpcap('HTTP_0.pcapng')
+
+load_layer('http')
+explore(scapy.layers.http)
+req = HTTP()/HTTPRequest(
+    Accept_Encoding=b'gzip, deflate',
+    Cache_Control=b'no-cache',
+    Connection=b'keep-alive',
+    Host=b'www.secdev.org',
+    Pragma=b'no-cache'
+)
+
+os.walk('.')
+z = os.walk('.')
+for i,j,k in z:
+    print(i,j,k)
+    
+soup = BeautifulSoup(a.content, 'html.parser')
+print(soup.prettify())
+
+s = r.Session()
+c = s.get(url)
+c = s.post(url=url, data=data)
+s.close()
+
+
+get_ipython().run_line_magic('save', "'testerix.py' 1-138")

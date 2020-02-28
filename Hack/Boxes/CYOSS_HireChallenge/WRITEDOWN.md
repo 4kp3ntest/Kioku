@@ -71,7 +71,7 @@ connecting to TFTP server, getting the pcap with _get broadcast.pcap_
 0100   54 68 65 72 65 21 20 0d 0a 48 6f 73 74 3a 20 4f   There! ..Host: O
 0110   62 69 2d 57 61 6e 0d 0a 0d 0a                     bi-Wan....
 
-###-> connectionless: the only UDP packet
+    ###-> connectionless: the only UDP packet
 Glad you got my Message. **We have to follow the Path to 
 flag1{9442e4e83c5050b04376cba48ee828a2407b7d4b}.**
 See you there! May the Force be with you! Obi-Wan
@@ -99,4 +99,8 @@ It requires a username (Obi-Wan) and a password
 ##Run OpenVAS before - just to be sure
 
 
-
+#Use the flag as webserver path introduces me to the wicked world of PHP
+The site has three hyperlinks to click on
+Each hyperlink changes the taxid property in URL
+taxid=troll gives a hint that I am looking at the wrong PHP
+There is also a redirect

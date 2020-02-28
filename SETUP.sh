@@ -26,14 +26,14 @@ if [[ $choice == 'y' ]]; then
 else
     echo '\tDid nothing...'
 fi
-echo '[VIM] Do you want to clone YouCompleteMe? (y/n)'
-read choice
-if [[ $choice == 'y' ]]; then
-    echo '\tclone YouCompleteMe Git repo'
-    git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
-else
-    echo '\tDid nothing...'
-fi
+#echo '[VIM] Do you want to clone YouCompleteMe? (y/n)'
+#read choice
+#if [[ $choice == 'y' ]]; then
+#    echo '\tclone YouCompleteMe Git repo'
+#    git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+#else
+#    echo '\tDid nothing...'
+#fi
 echo '[VIM] Do you want to install Plugins? (y/n)'
 read choice
 if [[ $choice == 'y' ]]; then
@@ -42,18 +42,18 @@ if [[ $choice == 'y' ]]; then
 else
     echo '\tDid nothing...'
 fi
-echo '[VIM] Do you want to compile YouCompleteMe? (y/n)'
-read choice
-if [[ $choice == 'y' ]]; then
-    echo '\tChange into ~/.vim/bundle/YouCompleteMe'
-    cd ~/.vim/bundle/YouCompleteMe
-    echo '\tRecursively update submodules'
-    git submodule update --init --recursive
-    echo '\tExecute install.py'
-    python3 install.py
-else
-    echo '\tDid nothing...'
-fi
+#echo '[VIM] Do you want to compile YouCompleteMe? (y/n)'
+#read choice
+#if [[ $choice == 'y' ]]; then
+#    echo '\tChange into ~/.vim/bundle/YouCompleteMe'
+#    cd ~/.vim/bundle/YouCompleteMe
+#    echo '\tRecursively update submodules'
+#    git submodule update --init --recursive
+#    echo '\tExecute install.py'
+#    python3 install.py
+#else
+#    echo '\tDid nothing...'
+#fi
 
 
 # [SETUP ZSH]
