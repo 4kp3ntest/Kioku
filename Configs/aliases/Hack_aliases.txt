@@ -2,6 +2,8 @@
 fncs=$( cat $0 | grep -e '^[a-z]\{2,7\}()' |cut -d' ' -f 1 )
 
 
+source $VENV/hack/bin/activate
+
 a() { clear; cd $HACK; screenfetch -A 'Debian' 2>/dev/null; ls -la; echo; echo $fncs; echo }
 s() { clear; cd $HACK; ls -la; echo; echo $fncs; echo }
 hack() { cd $HACK }
@@ -13,5 +15,4 @@ ctf() { cd $HACK/CTF; ls }
 boxes() { cd $HACK/CTF/Boxes; ls }
 otw() { cd $HACK/CTF/overthewire; clear; cat .banner.txt; ls }
 ipy() { sudo ipython --profile=hack; }
- 
-source $VENV/hack/bin/activate
+

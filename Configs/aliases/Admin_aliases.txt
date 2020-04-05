@@ -7,6 +7,7 @@ dock() { cd $ADMIN/Docker-Setups; ls }
 scripts() { cd $ADMIN/Scripts; ls }
 web() { cd $ADMIN/Web; ls }
 anki() { cd $ADMIN/Anki; ls }
+ipy() { sudo ipython --profile=admin }
 
 
 source $VENV/admin/bin/activate

@@ -58,4 +58,3 @@ https://tridactyl.cmcaine.co.uk/betas/tridactyl-latest.xpi
 modprobe nbd
 qemu-nbd --connect=/dev/nbd0 /path/to/qcow2file
 mount /dev/nbd0p1 mnt
-

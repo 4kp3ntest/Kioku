@@ -120,7 +120,10 @@ trap 'source $HOME/.motto_aliases' USR1
 
 # Use Vim keybinds in shell
 #bindkey -v
-
+#bindkey '/' history-incremental-search-backward
+#bindkey '^R' history-incremental-pattern-search-backward
+#bindkey '^[[A' up-line-or-search
+#bindkey '^[[B' down-line-or-search
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

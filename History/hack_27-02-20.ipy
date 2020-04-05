@@ -11,10 +11,10 @@ new: bs4
 """
 
 url = 'http://localhost:8000'
-url1 = url+'/index.php'
+url1 = 'http://localhost:8000/vulnerabilities/exec/'
 token = '123456789012345678901234567890FF'
 wrong_data = 'username=bob&password=password&Login=Login&usertoken={}'.format(token)
-data = 'username=admin&password=password&Login=Login&usertoken={}'.format(token)
+valid_data = 'username=admin&password=password&Login=Login&usertoken={}'.format(token)
 cookie = 'd143t00ma2ia285ie597a4qbs1'
 
 r.post(url=url, data=data)

@@ -1,6 +1,6 @@
 # Aliases specific to gnome user
     alias freecad='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="$HOME/Maker/freeCAD/:/root:rw" freecad freecad'
-    alias office='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="/home/gnome/Palast/地図 of Meaning/Vocab/:/root:rw" office libreoffice'
+    alias office='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --volume="/home/gnome/Palast/Documents/:/root:rw" office libreoffice'
     alias androidstudio="$ANDROID/android-studio/bin/studio.sh &"
     alias pycharm="/opt/pycharm-community-2019.1.1/bin/pycharm.sh &"
 

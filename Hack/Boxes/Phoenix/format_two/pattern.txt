@@ -1,1 +1,0 @@
-"Themagicnumberis:%n.\n",&changeme

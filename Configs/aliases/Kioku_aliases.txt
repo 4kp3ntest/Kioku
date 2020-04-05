@@ -10,4 +10,5 @@ vocab() { cd $ROOT/Vocab; ls -l }
 skills() { cd $ROOT/Skills; ls -l }
 conf() { cd $ROOT/Configs; ls -l }
 alse() { cd $ROOT/Configs/aliases; ls -l }
+hist() { cd $ROOT/History; ls -l }
 
