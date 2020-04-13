@@ -6,7 +6,6 @@ s() { clear; cd $ROOT; ls -l; echo; echo $fncs; echo }
 
 kioku() { cd $ROOT; clear; ls -l }
 poly() { cd $ROOT/Polyglot; ls -l }
-vocab() { cd $ROOT/Vocab; ls -l }
 skills() { cd $ROOT/Skills; ls -l }
 conf() { cd $ROOT/Configs; ls -l }
 alse() { cd $ROOT/Configs/aliases; ls -l }
