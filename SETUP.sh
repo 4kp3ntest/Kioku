@@ -5,7 +5,6 @@ echo Starting Setup Process...
 # [SETUP VIM]
 echo '[VIM] First install vim with YouCompleteMe Plugin'
 echo '[VIM] Make sure you have gvim and python3 installed (press enter to continue)'
-read
 echo '[VIM] Do you want to substitute .vimrc with the one in this repo (y/n)'
 read choice
 if [[ $choice == 'y' ]]; then
@@ -59,7 +58,7 @@ fi
 # [SETUP ZSH]
 echo '[ZSH] Setup zsh shell with Oh-my-ZSH'
 echo '[ZSH] Make sure you have zsh installed (press enter to continue)'
-echo '[ZSH] Do you want to change the shell to zsh? (y/n)'
+echo '[ZSH] Do you want to change shell to zsh? (y/n)'
 read choice
 if [[ $choice == 'y' ]]; then
     echo '\tChange shell to /usr/bin/zsh'
