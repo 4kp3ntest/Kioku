@@ -1,16 +1,20 @@
 #!/usr/bin/python3
 
 import subprocess
+import getpass
 import os
 
-user = input('To make things easier for now, please input user setup is running for:\n')
+
+user = getpass.getuser()
 if user == 'root':
+    print('[*] Running script for user root')
     home = '/root' 
 else:
+    print('[*] Running script for user {}'.format(user))
     home = '/home/'+user
 base = os.path.dirname(os.path.realpath(__file__))
 
-repo_vimrc   = base+'/Configs/vimrc'
+repo_vimrc   = base+'/Configs/vimrc0x1'
 repo_zshrc   = base+'/Configs/zshrc/zshrc'
 repo_aliases = base+'/Configs/aliases/aliases'
 home_vimrc   = home+'/.vimrc'
@@ -34,6 +38,11 @@ def setup_zsh():
     4. softlink .aliases from repo to user home
     """
     print('[ZSH] Setup zsh shell with Oh-my-ZSH')
+    # directory ~/.cache should exist
+    try:
+        os.makedirs(home+'/.cache')
+    except FileExistsError:
+        pass
     if confirm_user('Change shell to zsh?'):
         subprocess.call('chsh -s /usr/bin/zsh', shell=True)
     if confirm_user('Clone Oh-my-ZSH?'):
