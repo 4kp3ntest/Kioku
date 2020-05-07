@@ -6,28 +6,34 @@ import os
 
 
 user = getpass.getuser()
-if user == 'root':
-    print('[*] Running script for user root')
-    home = '/root' 
-else:
-    print('[*] Running script for user {}'.format(user))
-    home = '/home/'+user
-base = os.path.dirname(os.path.realpath(__file__))
+#base = os.path.dirname(os.path.realpath(__file__))
+base = '/home/Kioku'
+home = '/home/{}'.format(user)
+#TODO make a check if home directory is correct
 
-repo_vimrc   = base+'/Configs/vimrc0x1'
-repo_zshrc   = base+'/Configs/zshrc/zshrc'
-repo_aliases = base+'/Configs/aliases/aliases'
-home_vimrc   = home+'/.vimrc'
-home_zshrc   = home+'/.zshrc'
-home_aliases = home+'/.aliases'
+repo_vimrc      = base+'/Configs/vimrc0x1'
+repo_zshrc      = base+'/Configs/zshrc/zshrc'
+repo_aliases    = base+'/Configs/aliases/aliases'
+repo_terminator = base+'/Configs/terminator_conf.txt'
+repo_xbindkeys  = base+'/Configs/xbindkeysrc'
+home_vimrc      = home+'/.vimrc'
+home_zshrc      = home+'/.zshrc'
+home_aliases    = home+'/.aliases'
+home_terminator = home+'/.config/terminator/config'
+home_xbindkeys  = home+'/.xbindkeysrc'
 
 
 def main():
     #TODO determine OS
-    if confirm_user('vim required?'):
+    #TODO make more verbose
+    if confirm_user('[*] Setup vim?'):
         setup_vim()
-    if confirm_user('setup zsh shell?'):
+    if confirm_user('[*] Setup zsh shell?'):
         setup_zsh()
+    if confirm_user('[*] Setup terminator?'):
+        setup_terminator()
+    if confirm_user('[*] Setup xbindkeys? Might require restart'):
+        setup_xbindkeys()
 
 def setup_zsh():
     """
@@ -47,11 +53,16 @@ def setup_zsh():
         subprocess.call('chsh -s /usr/bin/zsh', shell=True)
     if confirm_user('Clone Oh-my-ZSH?'):
         subprocess.call('sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', shell=True)
+        #TODO process stops after Oh-my-ZSH changes shell
     if confirm_user('Softlink .zshrc from this repo?'):
         create_softlink(repo_zshrc, home_zshrc)
     if confirm_user('Softlink .aliases from this repo?'):
         create_softlink(repo_aliases, home_aliases)
 
+def setup_xbindkeys():
+    if confirm_user('Softlink .xbindkeys from this repo?'):
+        create_softlink(repo_xbindkeys, home_xbindkeys)
+    
 
 def setup_vim():
     """
@@ -67,7 +78,6 @@ def setup_vim():
         subprocess.call('git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim', shell=True)
     if confirm_user('Install Plugins?'):
         subprocess.call('vim +PluginInstall +qall', shell=True)
-    
 
 def create_softlink(src, dst):
     """
@@ -77,12 +87,10 @@ def create_softlink(src, dst):
     USE ABSOLUTE PATHS FOR BOTH ARGUMENTS
     """
     try:
-        #TODO check if it is a Symlink 
         os.remove(dst)
     except FileNotFoundError:
         pass
     subprocess.call(['ln', '-s', src, dst])
-
 
 def confirm_user(msg):
     """
@@ -98,28 +106,16 @@ def confirm_user(msg):
     else:
         return False
 
-
-
-
-
-
 def setup_terminator():
-    pass
-"""
-    echo '[TERM] Setup terminator '
-    echo '[TERM] Make sure you have terminator installed (press enter to continue)'
-    read
-    echo '[TERM] Do you want to substitute terminator/config with the one in this repo (y/n)'
-    read choice
-    if [[ $choice == 'y' ]]; then
-        echo '\tRemoving old file if it exists'
-        rm $HOME/.config/terminator/config
-        echo '\tCreating symlink to config in repo'
-        ln -s $PWD/Configs/terminator_conf.txt $HOME/.config/terminator/config
-    else
-        echo '\tDid nothing...'
-    fi
-"""    
+    print('Copy Terminator config')
+    if confirm_user('Softlink terminator config?'):
+        try:
+            os.makedirs(home+'/.config/terminator/')
+        except FileExistsError:
+            pass
+        create_softlink(repo_terminator, home_terminator)
+    else:
+        pass
 
 
 if __name__ == '__main__':

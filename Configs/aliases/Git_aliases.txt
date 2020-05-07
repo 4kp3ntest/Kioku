@@ -1,0 +1,14 @@
+#cat THIS file and display new functions
+fncs=$( cat $0 | grep -e '^[a-z]\{2,7\}()' |cut -d' ' -f 1 )
+
+s() { clear; cd $GIT; ls -la; echo; echo $fncs; echo }
+hack() { cd $HACK }
+oscp() { cd $HACK/OSCP; ls }
+tools() { cd $HACK/Tools; ls }
+play() { cd $HACK/Scriptyard; ls }
+res() { cd $HACK/Ressources; ls }
+ctf() { cd $HACK/CTF; ls }
+boxes() { cd $HACK/CTF/Boxes; ls }
+otw() { cd $HACK/CTF/overthewire; clear; cat .banner.txt; ls }
+ipy() { sudo ipython --profile=hack; }
+

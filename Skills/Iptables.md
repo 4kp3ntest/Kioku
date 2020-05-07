@@ -31,3 +31,6 @@ iptables -t nat -A PREROUTING -p tcp --dport 8888 -j DNAT --to-destination 192.1
 ### Drop TCP packages with RST flag
 iptables -A OUTPUT -p tcp --tcp-flags RST RST -s 192.168.10.177 -j DROP
 iptables -A OUTPUT -p icmp -s 192.168.10.177 -j DROP
+
+### Allow IP packets to local device while connected to NordVPN
+iptables -A OUTPUT -p all -d 192.168.1.1/24 -j ACCEPT
