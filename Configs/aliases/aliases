@@ -1,6 +1,9 @@
 #konichi wa - Willkommen
 HOSTNAME=$(hostname)
 
+#The ones I really use
+    alias i="ping google.de"
+
 # NEW ONES
     alias cookies="sqlite3 ~/.mozilla/firefox/22q3g1by.default/cookies.sqlite .dump"
     alias pgrep="ps aux |grep --color"
@@ -40,8 +43,6 @@ HOSTNAME=$(hostname)
     alias .ssh="cd $HOME/.ssh; ls"
     alias tmp="cd /tmp; ls"
     alias share="cd /usr/local/share"
-# Connections
-    alias i="ping google.de"
 # Specials
     alias gcc90="gcc -g -Wall -Wextra -pedantic -ansi"
     alias gcc="gcc -g -Wall -Wextra -pedantic"

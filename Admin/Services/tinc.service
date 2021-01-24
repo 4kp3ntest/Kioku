@@ -1,0 +1,15 @@
+[Unit]
+Description=Tinc connection to vultr instance
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/etc/tinc/vpn0x
+ExecStart=/sbin/tincd -n vpn0x -D -d3
+ExecReload=/sbin/tincd -n vpn0x -kHUP
+TimeoutStopSec=5
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

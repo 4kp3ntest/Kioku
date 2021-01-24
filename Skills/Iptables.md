@@ -3,7 +3,7 @@ iptables
 
 ### delete all rules
 iptable -F
-iptables -P INPUT DROP
+iptables -P INPUT DROP #Don't ever do this again!!!
 iptables -P OUTPUT DROP
 iptables -P FORWARD DROP
 ### list chains
